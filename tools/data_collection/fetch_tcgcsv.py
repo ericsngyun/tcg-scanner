@@ -2,16 +2,19 @@
 """
 TCGCSV Data Collection Script
 
-Downloads card data and images from tcgcsv.com for ML training.
+Downloads card data, images, and prices from tcgcsv.com for ML training.
 Designed to minimize API calls and respect rate limits.
 
 Usage:
     python fetch_tcgcsv.py --config ml/data/tcgcsv_config.yaml
     python fetch_tcgcsv.py --config ml/data/tcgcsv_config.yaml --images-only
     python fetch_tcgcsv.py --config ml/data/tcgcsv_config.yaml --metadata-only
+    python fetch_tcgcsv.py --config ml/data/tcgcsv_config.yaml --prices-only
 """
 
 import argparse
+import csv
+import io
 import json
 import time
 from pathlib import Path
@@ -23,6 +26,30 @@ import hashlib
 import requests
 import yaml
 from tqdm import tqdm
+
+
+@dataclass
+class PriceData:
+    """Represents price information for a product."""
+    product_id: int
+    low_price: Optional[float] = None
+    mid_price: Optional[float] = None
+    high_price: Optional[float] = None
+    market_price: Optional[float] = None
+    direct_low_price: Optional[float] = None
+    fetched_at: str = field(default_factory=lambda: datetime.now().isoformat())
+
+    def to_dict(self) -> dict:
+        """Convert to dictionary for JSON serialization."""
+        return {
+            "product_id": self.product_id,
+            "low_price": self.low_price,
+            "mid_price": self.mid_price,
+            "high_price": self.high_price,
+            "market_price": self.market_price,
+            "direct_low_price": self.direct_low_price,
+            "fetched_at": self.fetched_at,
+        }
 
 
 @dataclass
@@ -41,6 +68,12 @@ class Product:
     card_type: Optional[str] = None
     tags: List[str] = field(default_factory=list)
     extended_data: Dict[str, str] = field(default_factory=dict)
+    # Price data
+    low_price: Optional[float] = None
+    mid_price: Optional[float] = None
+    high_price: Optional[float] = None
+    market_price: Optional[float] = None
+    direct_low_price: Optional[float] = None
 
     @classmethod
     def from_api_response(cls, data: dict, group_name: str) -> "Product":
@@ -101,6 +134,11 @@ class Product:
             "card_type": self.card_type,
             "tags": self.tags,
             "extended_data": self.extended_data,
+            "low_price": self.low_price,
+            "mid_price": self.mid_price,
+            "high_price": self.high_price,
+            "market_price": self.market_price,
+            "direct_low_price": self.direct_low_price,
         }
 
 
@@ -162,6 +200,121 @@ class TCGCSVFetcher:
         elif isinstance(data, list):
             return data
         return []
+
+    def fetch_products_and_prices_csv(self, category_id: int, group_id: int) -> List[dict]:
+        """Fetch products with prices from CSV endpoint."""
+        url = f"{self.base_url}/{category_id}/{group_id}/ProductsAndPrices.csv"
+        print(f"  Fetching CSV: {url}")
+
+        response = self._request_with_retry(url)
+        if response is None:
+            return []
+
+        # Parse CSV
+        reader = csv.DictReader(io.StringIO(response.text))
+        return list(reader)
+
+    def _parse_price(self, value: str) -> Optional[float]:
+        """Parse price string to float, handling empty values."""
+        if not value or value.strip() == "":
+            return None
+        try:
+            return float(value)
+        except ValueError:
+            return None
+
+    def fetch_prices(self, category_id: int, group_id: int) -> Dict[int, PriceData]:
+        """Fetch current prices for all products in a group."""
+        rows = self.fetch_products_and_prices_csv(category_id, group_id)
+        prices = {}
+        fetched_at = datetime.now().isoformat()
+
+        for row in rows:
+            try:
+                product_id = int(row.get("productId", 0))
+                if product_id:
+                    prices[product_id] = PriceData(
+                        product_id=product_id,
+                        low_price=self._parse_price(row.get("lowPrice", "")),
+                        mid_price=self._parse_price(row.get("midPrice", "")),
+                        high_price=self._parse_price(row.get("highPrice", "")),
+                        market_price=self._parse_price(row.get("marketPrice", "")),
+                        direct_low_price=self._parse_price(row.get("directLowPrice", "")),
+                        fetched_at=fetched_at,
+                    )
+            except Exception as e:
+                print(f"  Error parsing price row: {e}")
+
+        return prices
+
+    def fetch_all_prices(self) -> Dict[int, PriceData]:
+        """Fetch prices for all Riftbound products."""
+        print("Fetching prices from tcgcsv.com...")
+        all_prices = {}
+        riftbound = self.config["riftbound"]
+        category_id = riftbound["category_id"]
+
+        for group in tqdm(riftbound["groups"], desc="Fetching prices"):
+            group_id = group["id"]
+            group_name = group["name"]
+
+            prices = self.fetch_prices(category_id, group_id)
+            print(f"  {group_name}: {len(prices)} prices")
+            all_prices.update(prices)
+
+            # Rate limiting
+            time.sleep(self.request_delay)
+
+        return all_prices
+
+    def update_products_with_prices(
+        self, products: List[Product], prices: Dict[int, PriceData]
+    ) -> List[Product]:
+        """Update product list with current prices."""
+        for product in products:
+            if product.product_id in prices:
+                price_data = prices[product.product_id]
+                product.low_price = price_data.low_price
+                product.mid_price = price_data.mid_price
+                product.high_price = price_data.high_price
+                product.market_price = price_data.market_price
+                product.direct_low_price = price_data.direct_low_price
+        return products
+
+    def save_price_history(self, prices: Dict[int, PriceData]) -> Path:
+        """Save prices to history file with timestamp."""
+        history_dir = self.processed_dir / "price_history"
+        history_dir.mkdir(exist_ok=True)
+
+        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+        history_file = history_dir / f"prices_{timestamp}.json"
+
+        price_data = {pid: p.to_dict() for pid, p in prices.items()}
+        with open(history_file, "w") as f:
+            json.dump(price_data, f, indent=2)
+
+        # Also save as latest
+        latest_file = self.processed_dir / "latest_prices.json"
+        with open(latest_file, "w") as f:
+            json.dump(price_data, f, indent=2)
+
+        print(f"Prices saved to {history_file}")
+        print(f"Latest prices updated at {latest_file}")
+        return history_file
+
+    def load_latest_prices(self) -> Optional[Dict[int, PriceData]]:
+        """Load the most recent price data."""
+        latest_file = self.processed_dir / "latest_prices.json"
+        if not latest_file.exists():
+            return None
+
+        with open(latest_file) as f:
+            data = json.load(f)
+
+        return {
+            int(pid): PriceData(**pdata)
+            for pid, pdata in data.items()
+        }
 
     def fetch_all_riftbound_products(self, force_refresh: bool = False) -> List[Product]:
         """Fetch all Riftbound products, using cache if available."""
@@ -371,10 +524,45 @@ def main():
         default=True,
         help="Filter to only actual cards (not sealed products)",
     )
+    parser.add_argument(
+        "--prices-only",
+        action="store_true",
+        help="Only fetch and update prices (for daily price updates)",
+    )
+    parser.add_argument(
+        "--with-prices",
+        action="store_true",
+        default=True,
+        help="Include price data when fetching products",
+    )
     args = parser.parse_args()
 
     output_base = Path(args.output)
     fetcher = TCGCSVFetcher(args.config, output_base)
+
+    # Handle prices-only mode (for daily updates)
+    if args.prices_only:
+        print("=" * 60)
+        print("PRICE UPDATE MODE")
+        print("=" * 60)
+        prices = fetcher.fetch_all_prices()
+        fetcher.save_price_history(prices)
+
+        # Update cached products with new prices if they exist
+        cache_file = fetcher.raw_dir / "all_products.json"
+        if cache_file.exists():
+            print("\nUpdating cached products with new prices...")
+            with open(cache_file) as f:
+                products = [Product(**p) for p in json.load(f)]
+            products = fetcher.update_products_with_prices(products, prices)
+            with open(cache_file, "w") as f:
+                json.dump([p.to_dict() for p in products], f, indent=2)
+            print(f"Updated {len(products)} products with current prices")
+
+        print("\n" + "=" * 60)
+        print(f"DONE! Fetched prices for {len(prices)} products")
+        print("=" * 60)
+        return
 
     # Fetch metadata
     if not args.images_only:
@@ -390,6 +578,20 @@ def main():
             return
         with open(cache_file) as f:
             products = [Product(**p) for p in json.load(f)]
+
+    # Fetch and attach prices
+    if args.with_prices:
+        print("\n" + "=" * 60)
+        print("STEP 1.5: Fetching price data")
+        print("=" * 60)
+        prices = fetcher.fetch_all_prices()
+        products = fetcher.update_products_with_prices(products, prices)
+        fetcher.save_price_history(prices)
+
+        # Re-save products with prices
+        cache_file = fetcher.raw_dir / "all_products.json"
+        with open(cache_file, "w") as f:
+            json.dump([p.to_dict() for p in products], f, indent=2)
 
     # Filter to cards only
     if args.cards_only:
