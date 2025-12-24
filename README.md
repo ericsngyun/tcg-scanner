@@ -89,8 +89,8 @@ python scripts/export_tflite.py --model models/fastvit.pt --output models/export
 
 ## Documentation
 
+- [Setup Guide](docs/SETUP.md) - **Start here!** Complete setup and usage instructions
 - [Technical Outline](docs/TECHNICAL_OUTLINE.md) - Detailed architecture and design decisions
-- [API Documentation](docs/API.md) - Backend API reference
 - [Contributing](docs/CONTRIBUTING.md) - How to contribute
 
 ## License
