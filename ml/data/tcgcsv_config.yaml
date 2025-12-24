@@ -1,0 +1,44 @@
+# TCGCSV Data Collection Configuration
+
+api:
+  base_url: "https://tcgcsv.com/tcgplayer"
+  cdn_url: "https://tcgplayer-cdn.tcgplayer.com/product"
+
+  # Rate limiting (be respectful)
+  request_delay_seconds: 1.0  # Delay between API requests
+  image_delay_seconds: 0.5    # Delay between image downloads
+  max_retries: 3
+  retry_delay_seconds: 5.0
+
+# Riftbound category
+riftbound:
+  category_id: 89
+  groups:
+    - id: 24343
+      name: "Promotional Cards"
+    - id: 24344
+      name: "Origins"
+    - id: 24439
+      name: "Origins: Proving Grounds"
+    - id: 24502
+      name: "Worlds Bundle 2025"
+    - id: 24519
+      name: "Spiritforged"
+    - id: 24528
+      name: "Organized Play Promotional Cards"
+    - id: 24552
+      name: "Judge Promotional Cards"
+    - id: 24560
+      name: "Unleashed"
+
+# Image settings
+images:
+  # Available sizes: 200w, 400w (possibly more)
+  preferred_size: "400w"
+  fallback_size: "200w"
+
+# Output paths
+output:
+  raw_data_dir: "raw/riftbound"
+  processed_dir: "processed/riftbound"
+  images_dir: "images/riftbound"
