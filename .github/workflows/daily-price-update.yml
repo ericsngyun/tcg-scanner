@@ -1,0 +1,78 @@
+name: Daily Price Update
+
+on:
+  schedule:
+    # Run daily at 2 PM EST (7 PM UTC / 19:00 UTC)
+    - cron: '0 19 * * *'
+  workflow_dispatch:  # Allow manual trigger
+
+jobs:
+  update-prices:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: |
+          pip install requests pyyaml tqdm
+
+      - name: Create output directories
+        run: |
+          mkdir -p ml/data/raw/riftbound
+          mkdir -p ml/data/processed/riftbound/price_history
+          mkdir -p logs
+
+      - name: Fetch latest prices
+        run: |
+          python tools/data_collection/fetch_tcgcsv.py --prices-only
+
+      - name: Check for changes
+        id: changes
+        run: |
+          if git diff --quiet ml/data/processed/riftbound/latest_prices.json 2>/dev/null; then
+            echo "has_changes=false" >> $GITHUB_OUTPUT
+            echo "No price changes detected"
+          else
+            echo "has_changes=true" >> $GITHUB_OUTPUT
+            echo "Price changes detected"
+          fi
+
+      - name: Commit and push price updates
+        if: steps.changes.outputs.has_changes == 'true'
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+
+          # Add price files
+          git add ml/data/processed/riftbound/latest_prices.json
+          git add ml/data/processed/riftbound/price_history/
+
+          # Get current date for commit message
+          DATE=$(date -u +"%Y-%m-%d %H:%M UTC")
+
+          git commit -m "Update prices: ${DATE}"
+          git push
+
+      - name: Summary
+        run: |
+          echo "## Price Update Summary" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          if [ -f ml/data/processed/riftbound/latest_prices.json ]; then
+            COUNT=$(python -c "import json; print(len(json.load(open('ml/data/processed/riftbound/latest_prices.json'))))")
+            echo "- **Products with prices:** ${COUNT}" >> $GITHUB_STEP_SUMMARY
+          fi
+          echo "- **Run time:** $(date -u +"%Y-%m-%d %H:%M UTC")" >> $GITHUB_STEP_SUMMARY
+          echo "- **Changes committed:** ${{ steps.changes.outputs.has_changes }}" >> $GITHUB_STEP_SUMMARY

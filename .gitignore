@@ -23,7 +23,7 @@ wheels/
 venv/
 ENV/
 
-# ML/Data
+# ML/Data - Model files
 *.pt
 *.pth
 *.onnx
@@ -34,13 +34,19 @@ ENV/
 *.pb
 *.savedmodel/
 ml/models/exports/
-ml/data/raw/
-ml/data/processed/
 *.ann
 *.usearch
 wandb/
 mlruns/
 lightning_logs/
+
+# ML/Data - Raw data and images (large files)
+ml/data/raw/
+ml/data/images/
+
+# ML/Data - Ignore training manifests (generated from images)
+ml/data/processed/**/training_manifest.json
+ml/data/processed/**/labels.json
 
 # IDE
 .idea/

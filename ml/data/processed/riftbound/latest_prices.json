@@ -1,0 +1,6770 @@
+{
+  "655495": {
+    "product_id": 655495,
+    "low_price": 421.98,
+    "mid_price": 429.99,
+    "high_price": 499.0,
+    "market_price": 432.65,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:26.913657"
+  },
+  "658333": {
+    "product_id": 658333,
+    "low_price": 218.0,
+    "mid_price": 331.98,
+    "high_price": 1000.0,
+    "market_price": 245.59,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:26.913657"
+  },
+  "659765": {
+    "product_id": 659765,
+    "low_price": 84.99,
+    "mid_price": 113.99,
+    "high_price": 565.0,
+    "market_price": 83.29,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:26.913657"
+  },
+  "659766": {
+    "product_id": 659766,
+    "low_price": 3.69,
+    "mid_price": 6.0,
+    "high_price": 26.99,
+    "market_price": 4.57,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:26.913657"
+  },
+  "663004": {
+    "product_id": 663004,
+    "low_price": 189.99,
+    "mid_price": 249.99,
+    "high_price": 315.0,
+    "market_price": 185.2,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:26.913657"
+  },
+  "635366": {
+    "product_id": 635366,
+    "low_price": 16.3,
+    "mid_price": 18.02,
+    "high_price": 18.8,
+    "market_price": 17.67,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "635368": {
+    "product_id": 635368,
+    "low_price": 268.0,
+    "mid_price": 311.54,
+    "high_price": 1000.0,
+    "market_price": 273.32,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "635369": {
+    "product_id": 635369,
+    "low_price": 1689.9,
+    "mid_price": 1933.83,
+    "high_price": 10000.0,
+    "market_price": 1871.09,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "635371": {
+    "product_id": 635371,
+    "low_price": 19.0,
+    "mid_price": 33.44,
+    "high_price": 74.5,
+    "market_price": 30.38,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "635372": {
+    "product_id": 635372,
+    "low_price": 129.99,
+    "mid_price": 134.98,
+    "high_price": 139.99,
+    "market_price": 97.78,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "635373": {
+    "product_id": 635373,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "635374": {
+    "product_id": 635374,
+    "low_price": 35.99,
+    "mid_price": 45.49,
+    "high_price": 55.0,
+    "market_price": 41.68,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "635375": {
+    "product_id": 635375,
+    "low_price": 28.99,
+    "mid_price": 35.0,
+    "high_price": 50.0,
+    "market_price": 32.35,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "635458": {
+    "product_id": 635458,
+    "low_price": 129.9,
+    "mid_price": 129.94,
+    "high_price": 129.98,
+    "market_price": 97.83,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "635459": {
+    "product_id": 635459,
+    "low_price": 18.0,
+    "mid_price": 23.55,
+    "high_price": 34.98,
+    "market_price": 22.79,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652771": {
+    "product_id": 652771,
+    "low_price": 0.01,
+    "mid_price": 0.2,
+    "high_price": 99.0,
+    "market_price": 0.1,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652772": {
+    "product_id": 652772,
+    "low_price": 0.05,
+    "mid_price": 0.31,
+    "high_price": 3.28,
+    "market_price": 0.27,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652773": {
+    "product_id": 652773,
+    "low_price": 0.01,
+    "mid_price": 0.25,
+    "high_price": 5.0,
+    "market_price": 0.22,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652774": {
+    "product_id": 652774,
+    "low_price": 0.01,
+    "mid_price": 0.25,
+    "high_price": 99.0,
+    "market_price": 0.21,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652775": {
+    "product_id": 652775,
+    "low_price": 0.16,
+    "mid_price": 0.4,
+    "high_price": 2.78,
+    "market_price": 0.37,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652776": {
+    "product_id": 652776,
+    "low_price": 0.17,
+    "mid_price": 0.41,
+    "high_price": 1.98,
+    "market_price": 0.4,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652777": {
+    "product_id": 652777,
+    "low_price": 0.14,
+    "mid_price": 0.4,
+    "high_price": 31.0,
+    "market_price": 0.26,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652778": {
+    "product_id": 652778,
+    "low_price": 23.99,
+    "mid_price": 28.0,
+    "high_price": 50.0,
+    "market_price": 24.09,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652779": {
+    "product_id": 652779,
+    "low_price": 0.01,
+    "mid_price": 0.2,
+    "high_price": 99.0,
+    "market_price": 0.12,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652780": {
+    "product_id": 652780,
+    "low_price": 0.11,
+    "mid_price": 0.25,
+    "high_price": 5.0,
+    "market_price": 0.19,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652781": {
+    "product_id": 652781,
+    "low_price": 0.01,
+    "mid_price": 0.2,
+    "high_price": 99.0,
+    "market_price": 0.09,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652782": {
+    "product_id": 652782,
+    "low_price": 0.06,
+    "mid_price": 0.3,
+    "high_price": 5.0,
+    "market_price": 0.28,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652783": {
+    "product_id": 652783,
+    "low_price": 2.49,
+    "mid_price": 3.54,
+    "high_price": 9.99,
+    "market_price": 2.89,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652784": {
+    "product_id": 652784,
+    "low_price": 0.01,
+    "mid_price": 0.2,
+    "high_price": 5.0,
+    "market_price": 0.13,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652785": {
+    "product_id": 652785,
+    "low_price": 0.01,
+    "mid_price": 0.2,
+    "high_price": 99.0,
+    "market_price": 0.12,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652786": {
+    "product_id": 652786,
+    "low_price": 0.09,
+    "mid_price": 0.75,
+    "high_price": 3.94,
+    "market_price": 0.67,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652787": {
+    "product_id": 652787,
+    "low_price": 0.01,
+    "mid_price": 0.2,
+    "high_price": 99.0,
+    "market_price": 0.13,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652788": {
+    "product_id": 652788,
+    "low_price": 0.07,
+    "mid_price": 0.27,
+    "high_price": 99.0,
+    "market_price": 0.23,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652789": {
+    "product_id": 652789,
+    "low_price": 0.05,
+    "mid_price": 0.49,
+    "high_price": 4.98,
+    "market_price": 0.42,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652790": {
+    "product_id": 652790,
+    "low_price": 0.01,
+    "mid_price": 0.2,
+    "high_price": 99.0,
+    "market_price": 0.08,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652791": {
+    "product_id": 652791,
+    "low_price": 0.05,
+    "mid_price": 0.25,
+    "high_price": 99.0,
+    "market_price": 0.13,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652792": {
+    "product_id": 652792,
+    "low_price": 0.16,
+    "mid_price": 0.4,
+    "high_price": 3.0,
+    "market_price": 0.36,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652793": {
+    "product_id": 652793,
+    "low_price": 0.15,
+    "mid_price": 0.4,
+    "high_price": 3.0,
+    "market_price": 0.38,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652794": {
+    "product_id": 652794,
+    "low_price": 0.2,
+    "mid_price": 0.44,
+    "high_price": 2.08,
+    "market_price": 0.4,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652795": {
+    "product_id": 652795,
+    "low_price": 0.13,
+    "mid_price": 0.5,
+    "high_price": 9.99,
+    "market_price": 0.3,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652796": {
+    "product_id": 652796,
+    "low_price": 0.09,
+    "mid_price": 0.31,
+    "high_price": 5.0,
+    "market_price": 0.22,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652797": {
+    "product_id": 652797,
+    "low_price": 0.49,
+    "mid_price": 1.0,
+    "high_price": 5.0,
+    "market_price": 1.04,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652798": {
+    "product_id": 652798,
+    "low_price": 8.98,
+    "mid_price": 11.89,
+    "high_price": 99.0,
+    "market_price": 10.19,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652799": {
+    "product_id": 652799,
+    "low_price": 20.0,
+    "mid_price": 25.0,
+    "high_price": 71.56,
+    "market_price": 22.46,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652800": {
+    "product_id": 652800,
+    "low_price": 1.2,
+    "mid_price": 3.39,
+    "high_price": 10.0,
+    "market_price": 2.58,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652801": {
+    "product_id": 652801,
+    "low_price": 5.99,
+    "mid_price": 8.99,
+    "high_price": 99.0,
+    "market_price": 7.59,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652802": {
+    "product_id": 652802,
+    "low_price": 0.09,
+    "mid_price": 0.45,
+    "high_price": 10.0,
+    "market_price": 0.31,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652803": {
+    "product_id": 652803,
+    "low_price": 5.99,
+    "mid_price": 9.49,
+    "high_price": 53.45,
+    "market_price": 8.48,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652804": {
+    "product_id": 652804,
+    "low_price": 0.08,
+    "mid_price": 0.34,
+    "high_price": 3.0,
+    "market_price": 0.27,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652805": {
+    "product_id": 652805,
+    "low_price": 0.03,
+    "mid_price": 0.25,
+    "high_price": 99.0,
+    "market_price": 0.26,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652806": {
+    "product_id": 652806,
+    "low_price": 0.24,
+    "mid_price": 0.65,
+    "high_price": 5.0,
+    "market_price": 0.52,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652807": {
+    "product_id": 652807,
+    "low_price": 0.15,
+    "mid_price": 0.5,
+    "high_price": 3.0,
+    "market_price": 0.36,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652808": {
+    "product_id": 652808,
+    "low_price": 1.5,
+    "mid_price": 2.32,
+    "high_price": 99.0,
+    "market_price": 1.87,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652809": {
+    "product_id": 652809,
+    "low_price": 2.5,
+    "mid_price": 4.47,
+    "high_price": 99.0,
+    "market_price": 3.45,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652810": {
+    "product_id": 652810,
+    "low_price": 7.0,
+    "mid_price": 12.34,
+    "high_price": 99.0,
+    "market_price": 8.69,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652811": {
+    "product_id": 652811,
+    "low_price": 9.99,
+    "mid_price": 13.98,
+    "high_price": 99.0,
+    "market_price": 11.28,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652812": {
+    "product_id": 652812,
+    "low_price": 96.78,
+    "mid_price": 107.21,
+    "high_price": 112.74,
+    "market_price": 97.44,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652813": {
+    "product_id": 652813,
+    "low_price": 115.0,
+    "mid_price": 132.69,
+    "high_price": 200.0,
+    "market_price": 103.71,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652814": {
+    "product_id": 652814,
+    "low_price": 22.5,
+    "mid_price": 28.25,
+    "high_price": 60.0,
+    "market_price": 24.28,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652815": {
+    "product_id": 652815,
+    "low_price": 4.19,
+    "mid_price": 6.57,
+    "high_price": 14.99,
+    "market_price": 5.55,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652816": {
+    "product_id": 652816,
+    "low_price": 6.28,
+    "mid_price": 10.57,
+    "high_price": 100.0,
+    "market_price": 8.53,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652817": {
+    "product_id": 652817,
+    "low_price": 0.27,
+    "mid_price": 0.68,
+    "high_price": 60.0,
+    "market_price": 0.59,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652818": {
+    "product_id": 652818,
+    "low_price": 18.17,
+    "mid_price": 24.0,
+    "high_price": 34.99,
+    "market_price": 21.77,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652819": {
+    "product_id": 652819,
+    "low_price": 0.13,
+    "mid_price": 0.25,
+    "high_price": 5.0,
+    "market_price": 0.22,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652820": {
+    "product_id": 652820,
+    "low_price": 0.15,
+    "mid_price": 0.41,
+    "high_price": 1.98,
+    "market_price": 0.4,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652821": {
+    "product_id": 652821,
+    "low_price": 0.39,
+    "mid_price": 0.88,
+    "high_price": 5.08,
+    "market_price": 0.7,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652822": {
+    "product_id": 652822,
+    "low_price": 0.15,
+    "mid_price": 0.54,
+    "high_price": 10.0,
+    "market_price": 0.55,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652823": {
+    "product_id": 652823,
+    "low_price": 0.16,
+    "mid_price": 0.3,
+    "high_price": 4.99,
+    "market_price": 0.29,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652824": {
+    "product_id": 652824,
+    "low_price": 0.01,
+    "mid_price": 0.2,
+    "high_price": 99.0,
+    "market_price": 0.13,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652825": {
+    "product_id": 652825,
+    "low_price": 0.01,
+    "mid_price": 0.2,
+    "high_price": 99.0,
+    "market_price": 0.04,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652826": {
+    "product_id": 652826,
+    "low_price": 0.08,
+    "mid_price": 0.25,
+    "high_price": 99.0,
+    "market_price": 0.23,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652827": {
+    "product_id": 652827,
+    "low_price": 0.15,
+    "mid_price": 0.41,
+    "high_price": 1.98,
+    "market_price": 0.41,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652828": {
+    "product_id": 652828,
+    "low_price": 0.01,
+    "mid_price": 0.24,
+    "high_price": 99.0,
+    "market_price": 0.12,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652829": {
+    "product_id": 652829,
+    "low_price": 0.12,
+    "mid_price": 0.33,
+    "high_price": 2.5,
+    "market_price": 0.24,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652830": {
+    "product_id": 652830,
+    "low_price": 0.09,
+    "mid_price": 0.24,
+    "high_price": 99.0,
+    "market_price": 0.16,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652831": {
+    "product_id": 652831,
+    "low_price": 0.24,
+    "mid_price": 0.5,
+    "high_price": 6.21,
+    "market_price": 0.44,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652832": {
+    "product_id": 652832,
+    "low_price": 0.01,
+    "mid_price": 0.35,
+    "high_price": 99.0,
+    "market_price": 0.34,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652833": {
+    "product_id": 652833,
+    "low_price": 0.1,
+    "mid_price": 0.35,
+    "high_price": 99.0,
+    "market_price": 0.27,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652834": {
+    "product_id": 652834,
+    "low_price": 0.69,
+    "mid_price": 1.0,
+    "high_price": 10.0,
+    "market_price": 0.96,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652835": {
+    "product_id": 652835,
+    "low_price": 0.09,
+    "mid_price": 0.25,
+    "high_price": 3.0,
+    "market_price": 0.19,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652836": {
+    "product_id": 652836,
+    "low_price": 0.87,
+    "mid_price": 1.27,
+    "high_price": 2.44,
+    "market_price": 1.33,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652837": {
+    "product_id": 652837,
+    "low_price": 0.1,
+    "mid_price": 0.25,
+    "high_price": 99.0,
+    "market_price": 0.18,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652838": {
+    "product_id": 652838,
+    "low_price": 0.01,
+    "mid_price": 0.25,
+    "high_price": 99.0,
+    "market_price": 0.18,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652839": {
+    "product_id": 652839,
+    "low_price": 0.1,
+    "mid_price": 0.3,
+    "high_price": 3.0,
+    "market_price": 0.24,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652840": {
+    "product_id": 652840,
+    "low_price": 0.94,
+    "mid_price": 1.5,
+    "high_price": 99.0,
+    "market_price": 1.4,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652841": {
+    "product_id": 652841,
+    "low_price": 0.01,
+    "mid_price": 0.25,
+    "high_price": 99.0,
+    "market_price": 0.09,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652842": {
+    "product_id": 652842,
+    "low_price": 0.6,
+    "mid_price": 1.25,
+    "high_price": 8.71,
+    "market_price": 1.0,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652843": {
+    "product_id": 652843,
+    "low_price": 7.43,
+    "mid_price": 9.3,
+    "high_price": 50.0,
+    "market_price": 8.33,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652844": {
+    "product_id": 652844,
+    "low_price": 0.69,
+    "mid_price": 1.29,
+    "high_price": 99.0,
+    "market_price": 1.03,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652845": {
+    "product_id": 652845,
+    "low_price": 0.3,
+    "mid_price": 0.81,
+    "high_price": 5.0,
+    "market_price": 0.61,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652846": {
+    "product_id": 652846,
+    "low_price": 0.1,
+    "mid_price": 0.45,
+    "high_price": 5.0,
+    "market_price": 0.32,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652847": {
+    "product_id": 652847,
+    "low_price": 0.09,
+    "mid_price": 0.31,
+    "high_price": 99.0,
+    "market_price": 0.26,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652848": {
+    "product_id": 652848,
+    "low_price": 0.1,
+    "mid_price": 0.38,
+    "high_price": 5.0,
+    "market_price": 0.34,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652849": {
+    "product_id": 652849,
+    "low_price": 0.05,
+    "mid_price": 0.26,
+    "high_price": 99.0,
+    "market_price": 0.28,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652850": {
+    "product_id": 652850,
+    "low_price": 2.0,
+    "mid_price": 4.58,
+    "high_price": 99.0,
+    "market_price": 2.85,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652851": {
+    "product_id": 652851,
+    "low_price": 0.23,
+    "mid_price": 0.5,
+    "high_price": 5.0,
+    "market_price": 0.42,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652852": {
+    "product_id": 652852,
+    "low_price": 6.99,
+    "mid_price": 9.69,
+    "high_price": 99.0,
+    "market_price": 8.83,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652853": {
+    "product_id": 652853,
+    "low_price": 0.5,
+    "mid_price": 1.17,
+    "high_price": 5.0,
+    "market_price": 0.98,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652854": {
+    "product_id": 652854,
+    "low_price": 5.99,
+    "mid_price": 8.99,
+    "high_price": 74.19,
+    "market_price": 8.04,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652855": {
+    "product_id": 652855,
+    "low_price": 12.5,
+    "mid_price": 15.63,
+    "high_price": 99.0,
+    "market_price": 14.07,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652856": {
+    "product_id": 652856,
+    "low_price": 2.5,
+    "mid_price": 4.03,
+    "high_price": 99.0,
+    "market_price": 2.89,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652857": {
+    "product_id": 652857,
+    "low_price": 3.99,
+    "mid_price": 7.27,
+    "high_price": 149.99,
+    "market_price": 5.47,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652858": {
+    "product_id": 652858,
+    "low_price": 3.99,
+    "mid_price": 6.5,
+    "high_price": 15.77,
+    "market_price": 4.81,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652859": {
+    "product_id": 652859,
+    "low_price": 9.01,
+    "mid_price": 12.14,
+    "high_price": 61.28,
+    "market_price": 10.4,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652860": {
+    "product_id": 652860,
+    "low_price": 10.69,
+    "mid_price": 14.99,
+    "high_price": 69.99,
+    "market_price": 12.84,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652861": {
+    "product_id": 652861,
+    "low_price": 14.0,
+    "mid_price": 19.99,
+    "high_price": 99.0,
+    "market_price": 18.22,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652862": {
+    "product_id": 652862,
+    "low_price": 58.11,
+    "mid_price": 64.0,
+    "high_price": 100.0,
+    "market_price": 59.72,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652863": {
+    "product_id": 652863,
+    "low_price": 0.46,
+    "mid_price": 0.9,
+    "high_price": 6.0,
+    "market_price": 0.78,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652864": {
+    "product_id": 652864,
+    "low_price": 0.15,
+    "mid_price": 0.49,
+    "high_price": 5.0,
+    "market_price": 0.35,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652865": {
+    "product_id": 652865,
+    "low_price": 0.01,
+    "mid_price": 0.24,
+    "high_price": 99.0,
+    "market_price": 0.13,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652866": {
+    "product_id": 652866,
+    "low_price": 0.01,
+    "mid_price": 0.2,
+    "high_price": 99.0,
+    "market_price": 0.08,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652867": {
+    "product_id": 652867,
+    "low_price": 3.0,
+    "mid_price": 4.0,
+    "high_price": 9.99,
+    "market_price": 3.62,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652868": {
+    "product_id": 652868,
+    "low_price": 0.19,
+    "mid_price": 0.5,
+    "high_price": 5.0,
+    "market_price": 0.42,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652869": {
+    "product_id": 652869,
+    "low_price": 24.75,
+    "mid_price": 24.75,
+    "high_price": 24.75,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652870": {
+    "product_id": 652870,
+    "low_price": 23.99,
+    "mid_price": 29.91,
+    "high_price": 49.99,
+    "market_price": 27.19,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652871": {
+    "product_id": 652871,
+    "low_price": 0.05,
+    "mid_price": 0.3,
+    "high_price": 5.0,
+    "market_price": 0.3,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652872": {
+    "product_id": 652872,
+    "low_price": 0.07,
+    "mid_price": 0.29,
+    "high_price": 2.08,
+    "market_price": 0.24,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652873": {
+    "product_id": 652873,
+    "low_price": 0.21,
+    "mid_price": 0.69,
+    "high_price": 3.62,
+    "market_price": 0.54,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652874": {
+    "product_id": 652874,
+    "low_price": 0.01,
+    "mid_price": 0.25,
+    "high_price": 4.99,
+    "market_price": 0.2,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652875": {
+    "product_id": 652875,
+    "low_price": 0.01,
+    "mid_price": 0.2,
+    "high_price": 99.0,
+    "market_price": 0.13,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652876": {
+    "product_id": 652876,
+    "low_price": 0.36,
+    "mid_price": 0.86,
+    "high_price": 5.0,
+    "market_price": 0.68,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652877": {
+    "product_id": 652877,
+    "low_price": 0.04,
+    "mid_price": 0.25,
+    "high_price": 99.0,
+    "market_price": 0.17,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652878": {
+    "product_id": 652878,
+    "low_price": 0.29,
+    "mid_price": 0.6,
+    "high_price": 99.0,
+    "market_price": 0.51,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652879": {
+    "product_id": 652879,
+    "low_price": 0.15,
+    "mid_price": 0.5,
+    "high_price": 25.0,
+    "market_price": 0.37,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652880": {
+    "product_id": 652880,
+    "low_price": 0.2,
+    "mid_price": 0.49,
+    "high_price": 2.0,
+    "market_price": 0.44,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652881": {
+    "product_id": 652881,
+    "low_price": 0.17,
+    "mid_price": 0.56,
+    "high_price": 4.98,
+    "market_price": 0.55,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652882": {
+    "product_id": 652882,
+    "low_price": 0.01,
+    "mid_price": 0.22,
+    "high_price": 99.0,
+    "market_price": 0.1,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652883": {
+    "product_id": 652883,
+    "low_price": 0.24,
+    "mid_price": 0.5,
+    "high_price": 3.31,
+    "market_price": 0.41,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652884": {
+    "product_id": 652884,
+    "low_price": 0.09,
+    "mid_price": 0.31,
+    "high_price": 99.0,
+    "market_price": 0.24,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652885": {
+    "product_id": 652885,
+    "low_price": 2.59,
+    "mid_price": 4.05,
+    "high_price": 99.0,
+    "market_price": 3.45,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652886": {
+    "product_id": 652886,
+    "low_price": 0.5,
+    "mid_price": 2.19,
+    "high_price": 6.99,
+    "market_price": 1.52,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652887": {
+    "product_id": 652887,
+    "low_price": 4.37,
+    "mid_price": 5.85,
+    "high_price": 15.0,
+    "market_price": 5.53,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652888": {
+    "product_id": 652888,
+    "low_price": 0.07,
+    "mid_price": 0.35,
+    "high_price": 5.0,
+    "market_price": 0.29,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652889": {
+    "product_id": 652889,
+    "low_price": 0.1,
+    "mid_price": 0.38,
+    "high_price": 5.0,
+    "market_price": 0.33,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652890": {
+    "product_id": 652890,
+    "low_price": 3.0,
+    "mid_price": 5.28,
+    "high_price": 99.0,
+    "market_price": 4.39,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652891": {
+    "product_id": 652891,
+    "low_price": 0.8,
+    "mid_price": 1.28,
+    "high_price": 5.0,
+    "market_price": 1.26,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652892": {
+    "product_id": 652892,
+    "low_price": 0.01,
+    "mid_price": 0.5,
+    "high_price": 5.0,
+    "market_price": 0.52,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652893": {
+    "product_id": 652893,
+    "low_price": 0.25,
+    "mid_price": 0.92,
+    "high_price": 25.0,
+    "market_price": 0.68,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652894": {
+    "product_id": 652894,
+    "low_price": 2.99,
+    "mid_price": 6.33,
+    "high_price": 79.96,
+    "market_price": 3.84,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652895": {
+    "product_id": 652895,
+    "low_price": 0.1,
+    "mid_price": 0.49,
+    "high_price": 99.0,
+    "market_price": 0.37,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652896": {
+    "product_id": 652896,
+    "low_price": 0.2,
+    "mid_price": 0.55,
+    "high_price": 45.0,
+    "market_price": 0.47,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652897": {
+    "product_id": 652897,
+    "low_price": 0.08,
+    "mid_price": 0.3,
+    "high_price": 5.68,
+    "market_price": 0.25,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652898": {
+    "product_id": 652898,
+    "low_price": 35.6,
+    "mid_price": 40.0,
+    "high_price": 80.0,
+    "market_price": 37.12,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652899": {
+    "product_id": 652899,
+    "low_price": 0.01,
+    "mid_price": 0.3,
+    "high_price": 5.0,
+    "market_price": 0.25,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652900": {
+    "product_id": 652900,
+    "low_price": 0.09,
+    "mid_price": 0.27,
+    "high_price": 3.0,
+    "market_price": 0.23,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652901": {
+    "product_id": 652901,
+    "low_price": 12.99,
+    "mid_price": 18.08,
+    "high_price": 99.0,
+    "market_price": 13.85,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652902": {
+    "product_id": 652902,
+    "low_price": 17.69,
+    "mid_price": 21.0,
+    "high_price": 99.0,
+    "market_price": 18.72,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652903": {
+    "product_id": 652903,
+    "low_price": 4.0,
+    "mid_price": 7.74,
+    "high_price": 99.0,
+    "market_price": 5.6,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652904": {
+    "product_id": 652904,
+    "low_price": 6.99,
+    "mid_price": 11.49,
+    "high_price": 99.0,
+    "market_price": 7.75,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652905": {
+    "product_id": 652905,
+    "low_price": 69.99,
+    "mid_price": 79.99,
+    "high_price": 120.0,
+    "market_price": 70.85,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652906": {
+    "product_id": 652906,
+    "low_price": 11.99,
+    "mid_price": 14.99,
+    "high_price": 113.0,
+    "market_price": 13.53,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652907": {
+    "product_id": 652907,
+    "low_price": 0.04,
+    "mid_price": 0.21,
+    "high_price": 99.0,
+    "market_price": 0.13,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652908": {
+    "product_id": 652908,
+    "low_price": 0.05,
+    "mid_price": 0.25,
+    "high_price": 1.49,
+    "market_price": 0.13,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652909": {
+    "product_id": 652909,
+    "low_price": 0.07,
+    "mid_price": 0.33,
+    "high_price": 33.0,
+    "market_price": 0.2,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652910": {
+    "product_id": 652910,
+    "low_price": 15.99,
+    "mid_price": 18.74,
+    "high_price": 35.0,
+    "market_price": 17.05,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652911": {
+    "product_id": 652911,
+    "low_price": 0.17,
+    "mid_price": 0.45,
+    "high_price": 10.0,
+    "market_price": 0.38,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652912": {
+    "product_id": 652912,
+    "low_price": 0.5,
+    "mid_price": 0.96,
+    "high_price": 5.0,
+    "market_price": 0.74,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652913": {
+    "product_id": 652913,
+    "low_price": 0.1,
+    "mid_price": 0.37,
+    "high_price": 3.0,
+    "market_price": 0.37,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652914": {
+    "product_id": 652914,
+    "low_price": 0.01,
+    "mid_price": 0.2,
+    "high_price": 99.0,
+    "market_price": 0.07,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652915": {
+    "product_id": 652915,
+    "low_price": 0.01,
+    "mid_price": 0.2,
+    "high_price": 99.0,
+    "market_price": 0.1,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652916": {
+    "product_id": 652916,
+    "low_price": 0.35,
+    "mid_price": 0.75,
+    "high_price": 5.0,
+    "market_price": 0.57,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652917": {
+    "product_id": 652917,
+    "low_price": 0.01,
+    "mid_price": 0.2,
+    "high_price": 99.0,
+    "market_price": 0.1,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652918": {
+    "product_id": 652918,
+    "low_price": 0.45,
+    "mid_price": 0.86,
+    "high_price": 10.0,
+    "market_price": 0.74,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652919": {
+    "product_id": 652919,
+    "low_price": 0.07,
+    "mid_price": 0.25,
+    "high_price": 1.0,
+    "market_price": 0.14,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652920": {
+    "product_id": 652920,
+    "low_price": 0.01,
+    "mid_price": 0.2,
+    "high_price": 99.0,
+    "market_price": 0.09,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652921": {
+    "product_id": 652921,
+    "low_price": 0.01,
+    "mid_price": 0.2,
+    "high_price": 99.0,
+    "market_price": 0.08,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652922": {
+    "product_id": 652922,
+    "low_price": 0.63,
+    "mid_price": 1.0,
+    "high_price": 99.0,
+    "market_price": 0.87,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652923": {
+    "product_id": 652923,
+    "low_price": 0.09,
+    "mid_price": 0.25,
+    "high_price": 99.0,
+    "market_price": 0.18,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652924": {
+    "product_id": 652924,
+    "low_price": 0.07,
+    "mid_price": 0.25,
+    "high_price": 99.0,
+    "market_price": 0.22,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652925": {
+    "product_id": 652925,
+    "low_price": 0.25,
+    "mid_price": 0.45,
+    "high_price": 99.0,
+    "market_price": 0.33,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652926": {
+    "product_id": 652926,
+    "low_price": 0.4,
+    "mid_price": 1.0,
+    "high_price": 5.0,
+    "market_price": 1.0,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652927": {
+    "product_id": 652927,
+    "low_price": 0.2,
+    "mid_price": 0.5,
+    "high_price": 2.0,
+    "market_price": 0.39,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652928": {
+    "product_id": 652928,
+    "low_price": 0.15,
+    "mid_price": 0.5,
+    "high_price": 5.0,
+    "market_price": 0.48,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652929": {
+    "product_id": 652929,
+    "low_price": 2.8,
+    "mid_price": 3.82,
+    "high_price": 7.0,
+    "market_price": 3.27,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652930": {
+    "product_id": 652930,
+    "low_price": 0.7,
+    "mid_price": 0.99,
+    "high_price": 3.94,
+    "market_price": 0.89,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652931": {
+    "product_id": 652931,
+    "low_price": 0.35,
+    "mid_price": 0.52,
+    "high_price": 5.0,
+    "market_price": 0.5,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652932": {
+    "product_id": 652932,
+    "low_price": 0.3,
+    "mid_price": 0.99,
+    "high_price": 5.0,
+    "market_price": 0.75,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652933": {
+    "product_id": 652933,
+    "low_price": 0.75,
+    "mid_price": 1.81,
+    "high_price": 9.97,
+    "market_price": 1.25,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652934": {
+    "product_id": 652934,
+    "low_price": 0.1,
+    "mid_price": 0.5,
+    "high_price": 15.0,
+    "market_price": 0.34,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652935": {
+    "product_id": 652935,
+    "low_price": 0.14,
+    "mid_price": 0.5,
+    "high_price": 25.0,
+    "market_price": 0.4,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652936": {
+    "product_id": 652936,
+    "low_price": 6.6,
+    "mid_price": 7.9,
+    "high_price": 149.99,
+    "market_price": 7.11,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652937": {
+    "product_id": 652937,
+    "low_price": 0.01,
+    "mid_price": 0.25,
+    "high_price": 99.0,
+    "market_price": 0.19,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652938": {
+    "product_id": 652938,
+    "low_price": 0.1,
+    "mid_price": 0.31,
+    "high_price": 3.23,
+    "market_price": 0.23,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652939": {
+    "product_id": 652939,
+    "low_price": 2.45,
+    "mid_price": 3.1,
+    "high_price": 99.0,
+    "market_price": 2.81,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652940": {
+    "product_id": 652940,
+    "low_price": 5.99,
+    "mid_price": 9.1,
+    "high_price": 99.0,
+    "market_price": 6.56,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652941": {
+    "product_id": 652941,
+    "low_price": 5.0,
+    "mid_price": 6.32,
+    "high_price": 99.0,
+    "market_price": 6.08,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652942": {
+    "product_id": 652942,
+    "low_price": 0.09,
+    "mid_price": 0.49,
+    "high_price": 99.0,
+    "market_price": 0.27,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652943": {
+    "product_id": 652943,
+    "low_price": 0.25,
+    "mid_price": 0.89,
+    "high_price": 8.99,
+    "market_price": 0.72,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652944": {
+    "product_id": 652944,
+    "low_price": 5.25,
+    "mid_price": 7.99,
+    "high_price": 48.16,
+    "market_price": 7.27,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652945": {
+    "product_id": 652945,
+    "low_price": 0.89,
+    "mid_price": 1.77,
+    "high_price": 7.98,
+    "market_price": 1.26,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652946": {
+    "product_id": 652946,
+    "low_price": 69.99,
+    "mid_price": 84.95,
+    "high_price": 120.0,
+    "market_price": 77.14,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652947": {
+    "product_id": 652947,
+    "low_price": 115.0,
+    "mid_price": 125.5,
+    "high_price": 149.99,
+    "market_price": 118.78,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652948": {
+    "product_id": 652948,
+    "low_price": 8.0,
+    "mid_price": 13.0,
+    "high_price": 99.0,
+    "market_price": 10.79,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652949": {
+    "product_id": 652949,
+    "low_price": 17.99,
+    "mid_price": 23.98,
+    "high_price": 49.95,
+    "market_price": 19.77,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652950": {
+    "product_id": 652950,
+    "low_price": 11.85,
+    "mid_price": 16.95,
+    "high_price": 50.0,
+    "market_price": 12.75,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652951": {
+    "product_id": 652951,
+    "low_price": 15.99,
+    "mid_price": 22.54,
+    "high_price": 65.0,
+    "market_price": 18.91,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652952": {
+    "product_id": 652952,
+    "low_price": 19.99,
+    "mid_price": 27.63,
+    "high_price": 49.99,
+    "market_price": 23.07,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652953": {
+    "product_id": 652953,
+    "low_price": 0.1,
+    "mid_price": 0.31,
+    "high_price": 2.01,
+    "market_price": 0.26,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652954": {
+    "product_id": 652954,
+    "low_price": 20.9,
+    "mid_price": 22.0,
+    "high_price": 22.66,
+    "market_price": 1.0,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652955": {
+    "product_id": 652955,
+    "low_price": 22.5,
+    "mid_price": 29.99,
+    "high_price": 50.0,
+    "market_price": 24.79,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652956": {
+    "product_id": 652956,
+    "low_price": 0.1,
+    "mid_price": 0.4,
+    "high_price": 1.99,
+    "market_price": 0.36,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652957": {
+    "product_id": 652957,
+    "low_price": 0.1,
+    "mid_price": 0.67,
+    "high_price": 5.0,
+    "market_price": 0.63,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652958": {
+    "product_id": 652958,
+    "low_price": 0.09,
+    "mid_price": 0.51,
+    "high_price": 5.0,
+    "market_price": 0.51,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652959": {
+    "product_id": 652959,
+    "low_price": 0.01,
+    "mid_price": 0.35,
+    "high_price": 3.0,
+    "market_price": 0.28,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652960": {
+    "product_id": 652960,
+    "low_price": 0.01,
+    "mid_price": 0.2,
+    "high_price": 99.0,
+    "market_price": 0.13,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652961": {
+    "product_id": 652961,
+    "low_price": 0.34,
+    "mid_price": 1.83,
+    "high_price": 4.0,
+    "market_price": 1.95,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652962": {
+    "product_id": 652962,
+    "low_price": 0.41,
+    "mid_price": 0.78,
+    "high_price": 9.45,
+    "market_price": 0.75,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652963": {
+    "product_id": 652963,
+    "low_price": 0.01,
+    "mid_price": 0.2,
+    "high_price": 99.0,
+    "market_price": 0.11,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652964": {
+    "product_id": 652964,
+    "low_price": 0.01,
+    "mid_price": 0.18,
+    "high_price": 99.0,
+    "market_price": 0.05,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652965": {
+    "product_id": 652965,
+    "low_price": 0.25,
+    "mid_price": 0.61,
+    "high_price": 5.0,
+    "market_price": 0.6,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652966": {
+    "product_id": 652966,
+    "low_price": 0.01,
+    "mid_price": 0.2,
+    "high_price": 99.0,
+    "market_price": 0.09,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652967": {
+    "product_id": 652967,
+    "low_price": 0.09,
+    "mid_price": 0.3,
+    "high_price": 6.14,
+    "market_price": 0.25,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652968": {
+    "product_id": 652968,
+    "low_price": 0.2,
+    "mid_price": 0.49,
+    "high_price": 3.0,
+    "market_price": 0.37,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652969": {
+    "product_id": 652969,
+    "low_price": 0.01,
+    "mid_price": 0.25,
+    "high_price": 99.0,
+    "market_price": 0.21,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652970": {
+    "product_id": 652970,
+    "low_price": 0.49,
+    "mid_price": 0.96,
+    "high_price": 10.0,
+    "market_price": 0.82,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652971": {
+    "product_id": 652971,
+    "low_price": 0.13,
+    "mid_price": 0.26,
+    "high_price": 99.0,
+    "market_price": 0.25,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652972": {
+    "product_id": 652972,
+    "low_price": 6.0,
+    "mid_price": 9.45,
+    "high_price": 15.99,
+    "market_price": 9.22,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652973": {
+    "product_id": 652973,
+    "low_price": 0.05,
+    "mid_price": 0.25,
+    "high_price": 99.0,
+    "market_price": 0.22,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652974": {
+    "product_id": 652974,
+    "low_price": 0.59,
+    "mid_price": 1.58,
+    "high_price": 5.0,
+    "market_price": 1.7,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652975": {
+    "product_id": 652975,
+    "low_price": 0.7,
+    "mid_price": 1.13,
+    "high_price": 7.99,
+    "market_price": 0.98,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652976": {
+    "product_id": 652976,
+    "low_price": 0.3,
+    "mid_price": 0.5,
+    "high_price": 2.15,
+    "market_price": 0.42,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652977": {
+    "product_id": 652977,
+    "low_price": 0.15,
+    "mid_price": 0.49,
+    "high_price": 3.27,
+    "market_price": 0.36,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652978": {
+    "product_id": 652978,
+    "low_price": 0.9,
+    "mid_price": 2.49,
+    "high_price": 99.0,
+    "market_price": 1.64,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652979": {
+    "product_id": 652979,
+    "low_price": 0.22,
+    "mid_price": 0.64,
+    "high_price": 4.0,
+    "market_price": 0.43,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652980": {
+    "product_id": 652980,
+    "low_price": 0.24,
+    "mid_price": 0.25,
+    "high_price": 1.0,
+    "market_price": 0.25,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652981": {
+    "product_id": 652981,
+    "low_price": 8.23,
+    "mid_price": 10.09,
+    "high_price": 19.99,
+    "market_price": 9.48,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652982": {
+    "product_id": 652982,
+    "low_price": 0.2,
+    "mid_price": 0.82,
+    "high_price": 99.0,
+    "market_price": 0.53,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652983": {
+    "product_id": 652983,
+    "low_price": 3.5,
+    "mid_price": 6.14,
+    "high_price": 149.99,
+    "market_price": 4.57,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652984": {
+    "product_id": 652984,
+    "low_price": 4.0,
+    "mid_price": 7.0,
+    "high_price": 99.0,
+    "market_price": 5.08,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652985": {
+    "product_id": 652985,
+    "low_price": 0.74,
+    "mid_price": 2.5,
+    "high_price": 99.0,
+    "market_price": 1.66,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652986": {
+    "product_id": 652986,
+    "low_price": 0.19,
+    "mid_price": 0.69,
+    "high_price": 9.99,
+    "market_price": 0.54,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652987": {
+    "product_id": 652987,
+    "low_price": 0.5,
+    "mid_price": 1.5,
+    "high_price": 10.0,
+    "market_price": 1.37,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652988": {
+    "product_id": 652988,
+    "low_price": 9.99,
+    "mid_price": 12.97,
+    "high_price": 25.99,
+    "market_price": 12.16,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652989": {
+    "product_id": 652989,
+    "low_price": 0.25,
+    "mid_price": 0.55,
+    "high_price": 3.0,
+    "market_price": 0.6,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652990": {
+    "product_id": 652990,
+    "low_price": 0.75,
+    "mid_price": 1.47,
+    "high_price": 5.0,
+    "market_price": 1.31,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652991": {
+    "product_id": 652991,
+    "low_price": 0.1,
+    "mid_price": 0.47,
+    "high_price": 2.99,
+    "market_price": 0.36,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652992": {
+    "product_id": 652992,
+    "low_price": 34.3,
+    "mid_price": 39.98,
+    "high_price": 99.0,
+    "market_price": 35.3,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652993": {
+    "product_id": 652993,
+    "low_price": 4.0,
+    "mid_price": 5.42,
+    "high_price": 99.0,
+    "market_price": 5.16,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652994": {
+    "product_id": 652994,
+    "low_price": 5.87,
+    "mid_price": 8.0,
+    "high_price": 99.95,
+    "market_price": 5.93,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652995": {
+    "product_id": 652995,
+    "low_price": 8.4,
+    "mid_price": 12.0,
+    "high_price": 99.0,
+    "market_price": 9.49,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652996": {
+    "product_id": 652996,
+    "low_price": 15.32,
+    "mid_price": 18.0,
+    "high_price": 50.0,
+    "market_price": 16.87,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652997": {
+    "product_id": 652997,
+    "low_price": 4.0,
+    "mid_price": 6.98,
+    "high_price": 99.0,
+    "market_price": 5.57,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652998": {
+    "product_id": 652998,
+    "low_price": 8.0,
+    "mid_price": 10.62,
+    "high_price": 79.99,
+    "market_price": 9.83,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "652999": {
+    "product_id": 652999,
+    "low_price": 0.01,
+    "mid_price": 0.2,
+    "high_price": 99.0,
+    "market_price": 0.13,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "653000": {
+    "product_id": 653000,
+    "low_price": 0.2,
+    "mid_price": 0.75,
+    "high_price": 2.99,
+    "market_price": 0.95,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "653001": {
+    "product_id": 653001,
+    "low_price": 0.01,
+    "mid_price": 0.2,
+    "high_price": 99.0,
+    "market_price": 0.08,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "653002": {
+    "product_id": 653002,
+    "low_price": 0.37,
+    "mid_price": 0.99,
+    "high_price": 4.0,
+    "market_price": 0.77,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "653003": {
+    "product_id": 653003,
+    "low_price": 0.1,
+    "mid_price": 0.39,
+    "high_price": 2.0,
+    "market_price": 0.4,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "653004": {
+    "product_id": 653004,
+    "low_price": 0.2,
+    "mid_price": 0.56,
+    "high_price": 3.0,
+    "market_price": 0.56,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "653005": {
+    "product_id": 653005,
+    "low_price": 0.01,
+    "mid_price": 0.18,
+    "high_price": 99.0,
+    "market_price": 0.06,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "653006": {
+    "product_id": 653006,
+    "low_price": 0.09,
+    "mid_price": 0.25,
+    "high_price": 4.99,
+    "market_price": 0.25,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "653007": {
+    "product_id": 653007,
+    "low_price": 0.54,
+    "mid_price": 10.45,
+    "high_price": 12.76,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "653008": {
+    "product_id": 653008,
+    "low_price": 15.0,
+    "mid_price": 18.94,
+    "high_price": 40.0,
+    "market_price": 17.06,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "653009": {
+    "product_id": 653009,
+    "low_price": 0.07,
+    "mid_price": 0.27,
+    "high_price": 3.19,
+    "market_price": 0.17,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "653010": {
+    "product_id": 653010,
+    "low_price": 0.03,
+    "mid_price": 0.2,
+    "high_price": 99.0,
+    "market_price": 0.17,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "653011": {
+    "product_id": 653011,
+    "low_price": 0.1,
+    "mid_price": 0.47,
+    "high_price": 1.99,
+    "market_price": 0.39,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "653012": {
+    "product_id": 653012,
+    "low_price": 0.08,
+    "mid_price": 0.25,
+    "high_price": 4.99,
+    "market_price": 0.23,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "653013": {
+    "product_id": 653013,
+    "low_price": 0.01,
+    "mid_price": 0.2,
+    "high_price": 99.0,
+    "market_price": 0.04,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "653014": {
+    "product_id": 653014,
+    "low_price": 0.05,
+    "mid_price": 0.25,
+    "high_price": 99.0,
+    "market_price": 0.18,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "653015": {
+    "product_id": 653015,
+    "low_price": 0.29,
+    "mid_price": 0.67,
+    "high_price": 3.0,
+    "market_price": 0.82,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "653016": {
+    "product_id": 653016,
+    "low_price": 0.36,
+    "mid_price": 0.83,
+    "high_price": 6.0,
+    "market_price": 0.8,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "653017": {
+    "product_id": 653017,
+    "low_price": 0.53,
+    "mid_price": 1.09,
+    "high_price": 5.82,
+    "market_price": 0.96,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "653018": {
+    "product_id": 653018,
+    "low_price": 0.99,
+    "mid_price": 1.35,
+    "high_price": 3.0,
+    "market_price": 1.37,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "653019": {
+    "product_id": 653019,
+    "low_price": 0.19,
+    "mid_price": 0.5,
+    "high_price": 5.0,
+    "market_price": 0.44,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "653020": {
+    "product_id": 653020,
+    "low_price": 0.2,
+    "mid_price": 1.62,
+    "high_price": 6.0,
+    "market_price": 0.96,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "653021": {
+    "product_id": 653021,
+    "low_price": 0.01,
+    "mid_price": 0.24,
+    "high_price": 99.0,
+    "market_price": 0.14,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "653022": {
+    "product_id": 653022,
+    "low_price": 0.1,
+    "mid_price": 0.56,
+    "high_price": 5.0,
+    "market_price": 0.41,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "653023": {
+    "product_id": 653023,
+    "low_price": 0.1,
+    "mid_price": 0.39,
+    "high_price": 3.0,
+    "market_price": 0.32,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "653024": {
+    "product_id": 653024,
+    "low_price": 0.01,
+    "mid_price": 0.25,
+    "high_price": 99.0,
+    "market_price": 0.16,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "653025": {
+    "product_id": 653025,
+    "low_price": 0.1,
+    "mid_price": 0.73,
+    "high_price": 5.0,
+    "market_price": 0.57,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "653026": {
+    "product_id": 653026,
+    "low_price": 3.99,
+    "mid_price": 6.0,
+    "high_price": 99.0,
+    "market_price": 4.21,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "653027": {
+    "product_id": 653027,
+    "low_price": 0.91,
+    "mid_price": 1.91,
+    "high_price": 5.0,
+    "market_price": 1.25,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "653028": {
+    "product_id": 653028,
+    "low_price": 0.65,
+    "mid_price": 1.21,
+    "high_price": 99.0,
+    "market_price": 1.07,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "653029": {
+    "product_id": 653029,
+    "low_price": 0.2,
+    "mid_price": 0.73,
+    "high_price": 4.49,
+    "market_price": 0.6,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "653030": {
+    "product_id": 653030,
+    "low_price": 0.7,
+    "mid_price": 1.4,
+    "high_price": 99.0,
+    "market_price": 1.14,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "653031": {
+    "product_id": 653031,
+    "low_price": 0.1,
+    "mid_price": 0.32,
+    "high_price": 3.0,
+    "market_price": 0.27,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "653032": {
+    "product_id": 653032,
+    "low_price": 1.49,
+    "mid_price": 3.75,
+    "high_price": 19.99,
+    "market_price": 1.79,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "653033": {
+    "product_id": 653033,
+    "low_price": 10.0,
+    "mid_price": 14.32,
+    "high_price": 49.0,
+    "market_price": 11.84,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "653034": {
+    "product_id": 653034,
+    "low_price": 2.39,
+    "mid_price": 4.01,
+    "high_price": 8.0,
+    "market_price": 3.46,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "653035": {
+    "product_id": 653035,
+    "low_price": 1.5,
+    "mid_price": 2.49,
+    "high_price": 99.0,
+    "market_price": 1.74,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "653036": {
+    "product_id": 653036,
+    "low_price": 5.39,
+    "mid_price": 7.99,
+    "high_price": 149.99,
+    "market_price": 6.82,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "653037": {
+    "product_id": 653037,
+    "low_price": 2.5,
+    "mid_price": 3.99,
+    "high_price": 15.0,
+    "market_price": 3.21,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "653038": {
+    "product_id": 653038,
+    "low_price": 35.0,
+    "mid_price": 39.99,
+    "high_price": 53.1,
+    "market_price": 37.09,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "653039": {
+    "product_id": 653039,
+    "low_price": 3.92,
+    "mid_price": 6.1,
+    "high_price": 99.0,
+    "market_price": 4.48,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "653040": {
+    "product_id": 653040,
+    "low_price": 5.66,
+    "mid_price": 10.14,
+    "high_price": 150.0,
+    "market_price": 7.53,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "653041": {
+    "product_id": 653041,
+    "low_price": 11.99,
+    "mid_price": 17.84,
+    "high_price": 99.0,
+    "market_price": 13.6,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "653042": {
+    "product_id": 653042,
+    "low_price": 36.84,
+    "mid_price": 42.71,
+    "high_price": 63.99,
+    "market_price": 38.08,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "653043": {
+    "product_id": 653043,
+    "low_price": 8.02,
+    "mid_price": 10.66,
+    "high_price": 99.0,
+    "market_price": 9.31,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "653044": {
+    "product_id": 653044,
+    "low_price": 9.21,
+    "mid_price": 14.49,
+    "high_price": 65.0,
+    "market_price": 9.76,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "653045": {
+    "product_id": 653045,
+    "low_price": 0.2,
+    "mid_price": 0.65,
+    "high_price": 8.3,
+    "market_price": 0.41,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "653046": {
+    "product_id": 653046,
+    "low_price": 25.0,
+    "mid_price": 44.0,
+    "high_price": 100.0,
+    "market_price": 30.53,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "653047": {
+    "product_id": 653047,
+    "low_price": 0.1,
+    "mid_price": 0.45,
+    "high_price": 99.0,
+    "market_price": 0.24,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "653048": {
+    "product_id": 653048,
+    "low_price": 4.99,
+    "mid_price": 8.39,
+    "high_price": 37.21,
+    "market_price": 6.25,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "653049": {
+    "product_id": 653049,
+    "low_price": 0.01,
+    "mid_price": 0.28,
+    "high_price": 99.0,
+    "market_price": 0.2,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "653050": {
+    "product_id": 653050,
+    "low_price": 13.99,
+    "mid_price": 20.0,
+    "high_price": 47.49,
+    "market_price": 15.59,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "653051": {
+    "product_id": 653051,
+    "low_price": 0.08,
+    "mid_price": 0.38,
+    "high_price": 99.0,
+    "market_price": 0.26,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "653052": {
+    "product_id": 653052,
+    "low_price": 2.0,
+    "mid_price": 4.0,
+    "high_price": 24.99,
+    "market_price": 2.87,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "653053": {
+    "product_id": 653053,
+    "low_price": 0.4,
+    "mid_price": 2.0,
+    "high_price": 10.0,
+    "market_price": 1.52,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "653054": {
+    "product_id": 653054,
+    "low_price": 11.99,
+    "mid_price": 14.95,
+    "high_price": 47.99,
+    "market_price": 13.55,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "653055": {
+    "product_id": 653055,
+    "low_price": 0.01,
+    "mid_price": 0.25,
+    "high_price": 99.0,
+    "market_price": 0.26,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "653056": {
+    "product_id": 653056,
+    "low_price": 4.99,
+    "mid_price": 8.0,
+    "high_price": 50.0,
+    "market_price": 6.46,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "653057": {
+    "product_id": 653057,
+    "low_price": 0.17,
+    "mid_price": 0.45,
+    "high_price": 99.0,
+    "market_price": 0.34,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "653058": {
+    "product_id": 653058,
+    "low_price": 5.98,
+    "mid_price": 9.5,
+    "high_price": 59.99,
+    "market_price": 7.11,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "653059": {
+    "product_id": 653059,
+    "low_price": 0.15,
+    "mid_price": 0.45,
+    "high_price": 6.0,
+    "market_price": 0.33,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "653060": {
+    "product_id": 653060,
+    "low_price": 24.99,
+    "mid_price": 30.0,
+    "high_price": 99.0,
+    "market_price": 23.95,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "653061": {
+    "product_id": 653061,
+    "low_price": 0.2,
+    "mid_price": 0.5,
+    "high_price": 10.0,
+    "market_price": 0.34,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "653062": {
+    "product_id": 653062,
+    "low_price": 11.84,
+    "mid_price": 17.96,
+    "high_price": 49.95,
+    "market_price": 12.79,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "653063": {
+    "product_id": 653063,
+    "low_price": 0.01,
+    "mid_price": 0.29,
+    "high_price": 6.39,
+    "market_price": 0.18,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "653064": {
+    "product_id": 653064,
+    "low_price": 10.0,
+    "mid_price": 13.59,
+    "high_price": 34.95,
+    "market_price": 11.57,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "653065": {
+    "product_id": 653065,
+    "low_price": 0.1,
+    "mid_price": 0.46,
+    "high_price": 10.0,
+    "market_price": 0.36,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "653066": {
+    "product_id": 653066,
+    "low_price": 22.99,
+    "mid_price": 26.71,
+    "high_price": 50.0,
+    "market_price": 24.21,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "653067": {
+    "product_id": 653067,
+    "low_price": 0.16,
+    "mid_price": 0.5,
+    "high_price": 20.0,
+    "market_price": 0.34,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "653068": {
+    "product_id": 653068,
+    "low_price": 44.9,
+    "mid_price": 57.13,
+    "high_price": 107.77,
+    "market_price": 48.22,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "653069": {
+    "product_id": 653069,
+    "low_price": 0.36,
+    "mid_price": 0.95,
+    "high_price": 3.74,
+    "market_price": 0.9,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "653070": {
+    "product_id": 653070,
+    "low_price": 0.15,
+    "mid_price": 0.26,
+    "high_price": 3.0,
+    "market_price": 0.26,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "653071": {
+    "product_id": 653071,
+    "low_price": 0.05,
+    "mid_price": 0.25,
+    "high_price": 99.0,
+    "market_price": 0.19,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "653072": {
+    "product_id": 653072,
+    "low_price": 0.6,
+    "mid_price": 1.0,
+    "high_price": 3.98,
+    "market_price": 0.8,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "653073": {
+    "product_id": 653073,
+    "low_price": 0.05,
+    "mid_price": 0.25,
+    "high_price": 3.0,
+    "market_price": 0.2,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "653074": {
+    "product_id": 653074,
+    "low_price": 0.36,
+    "mid_price": 4.4,
+    "high_price": 99.0,
+    "market_price": 4.15,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "653075": {
+    "product_id": 653075,
+    "low_price": 0.05,
+    "mid_price": 0.25,
+    "high_price": 99.0,
+    "market_price": 0.17,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "653076": {
+    "product_id": 653076,
+    "low_price": 0.02,
+    "mid_price": 0.25,
+    "high_price": 99.0,
+    "market_price": 0.16,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "653077": {
+    "product_id": 653077,
+    "low_price": 0.02,
+    "mid_price": 0.24,
+    "high_price": 99.0,
+    "market_price": 0.18,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "653078": {
+    "product_id": 653078,
+    "low_price": 0.1,
+    "mid_price": 0.34,
+    "high_price": 3.0,
+    "market_price": 0.3,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "653079": {
+    "product_id": 653079,
+    "low_price": 0.05,
+    "mid_price": 0.25,
+    "high_price": 3.0,
+    "market_price": 0.17,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "653080": {
+    "product_id": 653080,
+    "low_price": 0.01,
+    "mid_price": 0.24,
+    "high_price": 99.0,
+    "market_price": 0.15,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "653081": {
+    "product_id": 653081,
+    "low_price": 0.34,
+    "mid_price": 0.62,
+    "high_price": 3.0,
+    "market_price": 0.55,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "653082": {
+    "product_id": 653082,
+    "low_price": 0.6,
+    "mid_price": 1.07,
+    "high_price": 5.0,
+    "market_price": 1.03,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "653083": {
+    "product_id": 653083,
+    "low_price": 0.01,
+    "mid_price": 0.27,
+    "high_price": 99.0,
+    "market_price": 0.24,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "653084": {
+    "product_id": 653084,
+    "low_price": 0.17,
+    "mid_price": 0.35,
+    "high_price": 3.0,
+    "market_price": 0.31,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "653085": {
+    "product_id": 653085,
+    "low_price": 0.1,
+    "mid_price": 0.28,
+    "high_price": 7.05,
+    "market_price": 0.25,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "653086": {
+    "product_id": 653086,
+    "low_price": 0.45,
+    "mid_price": 0.66,
+    "high_price": 6.54,
+    "market_price": 0.62,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "653087": {
+    "product_id": 653087,
+    "low_price": 0.16,
+    "mid_price": 0.77,
+    "high_price": 99.0,
+    "market_price": 0.62,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "653088": {
+    "product_id": 653088,
+    "low_price": 1.0,
+    "mid_price": 2.0,
+    "high_price": 5.27,
+    "market_price": 1.93,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "653089": {
+    "product_id": 653089,
+    "low_price": 0.05,
+    "mid_price": 0.26,
+    "high_price": 99.0,
+    "market_price": 0.24,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "653090": {
+    "product_id": 653090,
+    "low_price": 0.01,
+    "mid_price": 0.25,
+    "high_price": 99.0,
+    "market_price": 0.19,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "653091": {
+    "product_id": 653091,
+    "low_price": 0.64,
+    "mid_price": 0.99,
+    "high_price": 3.16,
+    "market_price": 0.89,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "653092": {
+    "product_id": 653092,
+    "low_price": 0.9,
+    "mid_price": 1.74,
+    "high_price": 5.27,
+    "market_price": 1.61,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "653093": {
+    "product_id": 653093,
+    "low_price": 164.99,
+    "mid_price": 180.0,
+    "high_price": 325.0,
+    "market_price": 169.08,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "653094": {
+    "product_id": 653094,
+    "low_price": 2199.98,
+    "mid_price": 2425.11,
+    "high_price": 3200.0,
+    "market_price": 1830.61,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "653095": {
+    "product_id": 653095,
+    "low_price": 71.92,
+    "mid_price": 82.0,
+    "high_price": 398.98,
+    "market_price": 72.16,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "653096": {
+    "product_id": 653096,
+    "low_price": 491.92,
+    "mid_price": 499.98,
+    "high_price": 799.99,
+    "market_price": 511.04,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "653097": {
+    "product_id": 653097,
+    "low_price": 87.0,
+    "mid_price": 96.06,
+    "high_price": 125.0,
+    "market_price": 91.15,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "653098": {
+    "product_id": 653098,
+    "low_price": 849.99,
+    "mid_price": 925.1,
+    "high_price": 20000.0,
+    "market_price": 627.6,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "653099": {
+    "product_id": 653099,
+    "low_price": 54.99,
+    "mid_price": 63.61,
+    "high_price": 399.99,
+    "market_price": 57.59,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "653100": {
+    "product_id": 653100,
+    "low_price": 549.99,
+    "mid_price": 700.0,
+    "high_price": 949.98,
+    "market_price": 467.21,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "653101": {
+    "product_id": 653101,
+    "low_price": 199.36,
+    "mid_price": 214.98,
+    "high_price": 450.0,
+    "market_price": 198.59,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "653102": {
+    "product_id": 653102,
+    "low_price": 1649.0,
+    "mid_price": 1798.99,
+    "high_price": 3000.0,
+    "market_price": 1430.57,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "653103": {
+    "product_id": 653103,
+    "low_price": 72.99,
+    "mid_price": 77.11,
+    "high_price": 199.99,
+    "market_price": 73.17,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "653104": {
+    "product_id": 653104,
+    "low_price": 695.0,
+    "mid_price": 800.0,
+    "high_price": 999.99,
+    "market_price": 711.02,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "653105": {
+    "product_id": 653105,
+    "low_price": 73.77,
+    "mid_price": 80.75,
+    "high_price": 399.99,
+    "market_price": 73.64,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "653106": {
+    "product_id": 653106,
+    "low_price": 789.99,
+    "mid_price": 950.0,
+    "high_price": 1000.0,
+    "market_price": 616.98,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "653107": {
+    "product_id": 653107,
+    "low_price": 89.0,
+    "mid_price": 98.71,
+    "high_price": 150.0,
+    "market_price": 94.7,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "653108": {
+    "product_id": 653108,
+    "low_price": 625.0,
+    "mid_price": 651.45,
+    "high_price": 950.0,
+    "market_price": 564.98,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "653109": {
+    "product_id": 653109,
+    "low_price": 94.71,
+    "mid_price": 107.13,
+    "high_price": 185.01,
+    "market_price": 99.98,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "653110": {
+    "product_id": 653110,
+    "low_price": 745.0,
+    "mid_price": 785.5,
+    "high_price": 825.99,
+    "market_price": 565.87,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "653111": {
+    "product_id": 653111,
+    "low_price": 91.31,
+    "mid_price": 103.12,
+    "high_price": 189.99,
+    "market_price": 91.65,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "653112": {
+    "product_id": 653112,
+    "low_price": 633.5,
+    "mid_price": 672.48,
+    "high_price": 897.99,
+    "market_price": 518.96,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "653113": {
+    "product_id": 653113,
+    "low_price": 124.98,
+    "mid_price": 125.73,
+    "high_price": 150.0,
+    "market_price": 116.3,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "653114": {
+    "product_id": 653114,
+    "low_price": 998.99,
+    "mid_price": 1048.94,
+    "high_price": 1098.89,
+    "market_price": 734.2,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "653115": {
+    "product_id": 653115,
+    "low_price": 96.87,
+    "mid_price": 107.5,
+    "high_price": 350.0,
+    "market_price": 98.89,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "653116": {
+    "product_id": 653116,
+    "low_price": 779.98,
+    "mid_price": 899.99,
+    "high_price": 2000.0,
+    "market_price": 637.11,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "653117": {
+    "product_id": 653117,
+    "low_price": 0.09,
+    "mid_price": 0.25,
+    "high_price": 4.99,
+    "market_price": 0.21,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "653230": {
+    "product_id": 653230,
+    "low_price": 3.0,
+    "mid_price": 5.13,
+    "high_price": 85.99,
+    "market_price": 4.41,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "653231": {
+    "product_id": 653231,
+    "low_price": 19.28,
+    "mid_price": 23.99,
+    "high_price": 122.97,
+    "market_price": 21.04,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "660169": {
+    "product_id": 660169,
+    "low_price": 0.01,
+    "mid_price": 0.19,
+    "high_price": 99.0,
+    "market_price": 0.14,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "660170": {
+    "product_id": 660170,
+    "low_price": 0.01,
+    "mid_price": 0.19,
+    "high_price": 99.0,
+    "market_price": 0.13,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "660171": {
+    "product_id": 660171,
+    "low_price": 0.01,
+    "mid_price": 0.2,
+    "high_price": 99.0,
+    "market_price": 0.18,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "662994": {
+    "product_id": 662994,
+    "low_price": 0.01,
+    "mid_price": 0.2,
+    "high_price": 1.44,
+    "market_price": 0.18,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:27.988865"
+  },
+  "635460": {
+    "product_id": 635460,
+    "low_price": 201.99,
+    "mid_price": 223.99,
+    "high_price": 499.95,
+    "market_price": 196.81,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:29.278566"
+  },
+  "653136": {
+    "product_id": 653136,
+    "low_price": 1.0,
+    "mid_price": 2.08,
+    "high_price": 12.99,
+    "market_price": 1.7,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:29.278566"
+  },
+  "653137": {
+    "product_id": 653137,
+    "low_price": 0.34,
+    "mid_price": 0.56,
+    "high_price": 5.73,
+    "market_price": 0.53,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:29.278566"
+  },
+  "653138": {
+    "product_id": 653138,
+    "low_price": 0.75,
+    "mid_price": 1.0,
+    "high_price": 5.73,
+    "market_price": 0.96,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:29.278566"
+  },
+  "653139": {
+    "product_id": 653139,
+    "low_price": 1.7,
+    "mid_price": 2.74,
+    "high_price": 8.99,
+    "market_price": 2.2,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:29.278566"
+  },
+  "653140": {
+    "product_id": 653140,
+    "low_price": 0.1,
+    "mid_price": 0.45,
+    "high_price": 4.72,
+    "market_price": 0.31,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:29.278566"
+  },
+  "653141": {
+    "product_id": 653141,
+    "low_price": 1.5,
+    "mid_price": 1.99,
+    "high_price": 8.49,
+    "market_price": 1.85,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:29.278566"
+  },
+  "653142": {
+    "product_id": 653142,
+    "low_price": 1.0,
+    "mid_price": 1.82,
+    "high_price": 4.99,
+    "market_price": 1.57,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:29.278566"
+  },
+  "653143": {
+    "product_id": 653143,
+    "low_price": 0.25,
+    "mid_price": 0.6,
+    "high_price": 5.73,
+    "market_price": 0.48,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:29.278566"
+  },
+  "653144": {
+    "product_id": 653144,
+    "low_price": 4.0,
+    "mid_price": 5.61,
+    "high_price": 19.0,
+    "market_price": 4.83,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:29.278566"
+  },
+  "653145": {
+    "product_id": 653145,
+    "low_price": 5.0,
+    "mid_price": 7.95,
+    "high_price": 12.99,
+    "market_price": 5.86,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:29.278566"
+  },
+  "653146": {
+    "product_id": 653146,
+    "low_price": 60.55,
+    "mid_price": 79.0,
+    "high_price": 100.0,
+    "market_price": 58.69,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:29.278566"
+  },
+  "653147": {
+    "product_id": 653147,
+    "low_price": 4.36,
+    "mid_price": 4.47,
+    "high_price": 4.59,
+    "market_price": 4.79,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:29.278566"
+  },
+  "653148": {
+    "product_id": 653148,
+    "low_price": 2.2,
+    "mid_price": 2.87,
+    "high_price": 5.85,
+    "market_price": 2.48,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:29.278566"
+  },
+  "653149": {
+    "product_id": 653149,
+    "low_price": 6.32,
+    "mid_price": 7.2,
+    "high_price": 12.23,
+    "market_price": 6.53,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:29.278566"
+  },
+  "653150": {
+    "product_id": 653150,
+    "low_price": 3.69,
+    "mid_price": 5.41,
+    "high_price": 40.0,
+    "market_price": 4.78,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:29.278566"
+  },
+  "653151": {
+    "product_id": 653151,
+    "low_price": 0.09,
+    "mid_price": 0.35,
+    "high_price": 1.68,
+    "market_price": 0.3,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:29.278566"
+  },
+  "653152": {
+    "product_id": 653152,
+    "low_price": 20.0,
+    "mid_price": 29.36,
+    "high_price": 95.0,
+    "market_price": 23.56,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:29.278566"
+  },
+  "653153": {
+    "product_id": 653153,
+    "low_price": 0.84,
+    "mid_price": 1.78,
+    "high_price": 7.99,
+    "market_price": 1.45,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:29.278566"
+  },
+  "653154": {
+    "product_id": 653154,
+    "low_price": 15.0,
+    "mid_price": 20.0,
+    "high_price": 41.96,
+    "market_price": 18.57,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:29.278566"
+  },
+  "653155": {
+    "product_id": 653155,
+    "low_price": 0.44,
+    "mid_price": 1.12,
+    "high_price": 8.99,
+    "market_price": 1.02,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:29.278566"
+  },
+  "653156": {
+    "product_id": 653156,
+    "low_price": 5.99,
+    "mid_price": 8.24,
+    "high_price": 14.25,
+    "market_price": 7.29,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:29.278566"
+  },
+  "653157": {
+    "product_id": 653157,
+    "low_price": 2.9,
+    "mid_price": 3.87,
+    "high_price": 5.99,
+    "market_price": 3.4,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:29.278566"
+  },
+  "653158": {
+    "product_id": 653158,
+    "low_price": 1.3,
+    "mid_price": 1.91,
+    "high_price": 8.99,
+    "market_price": 1.68,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:29.278566"
+  },
+  "653159": {
+    "product_id": 653159,
+    "low_price": 0.75,
+    "mid_price": 1.0,
+    "high_price": 4.01,
+    "market_price": 0.92,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:29.278566"
+  },
+  "663920": {
+    "product_id": 663920,
+    "low_price": 1499.99,
+    "mid_price": 1499.99,
+    "high_price": 1499.99,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:29.278566"
+  },
+  "664567": {
+    "product_id": 664567,
+    "low_price": 3.0,
+    "mid_price": 8.97,
+    "high_price": 15.0,
+    "market_price": 5.99,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:29.278566"
+  },
+  "664569": {
+    "product_id": 664569,
+    "low_price": 3.0,
+    "mid_price": 8.48,
+    "high_price": 15.0,
+    "market_price": 8.0,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:29.278566"
+  },
+  "664570": {
+    "product_id": 664570,
+    "low_price": 3.0,
+    "mid_price": 8.97,
+    "high_price": 15.0,
+    "market_price": 5.01,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:29.278566"
+  },
+  "664571": {
+    "product_id": 664571,
+    "low_price": 3.0,
+    "mid_price": 5.99,
+    "high_price": 9.99,
+    "market_price": 3.99,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:29.278566"
+  },
+  "661934": {
+    "product_id": 661934,
+    "low_price": 309.4,
+    "mid_price": 320.01,
+    "high_price": 348.78,
+    "market_price": 320.48,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "661937": {
+    "product_id": 661937,
+    "low_price": 1999.88,
+    "mid_price": 1999.98,
+    "high_price": 1999.98,
+    "market_price": 1591.94,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "661939": {
+    "product_id": 661939,
+    "low_price": 44.78,
+    "mid_price": 46.0,
+    "high_price": 49.98,
+    "market_price": 47.54,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "661942": {
+    "product_id": 661942,
+    "low_price": 44.56,
+    "mid_price": 46.69,
+    "high_price": 49.88,
+    "market_price": 48.25,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "661948": {
+    "product_id": 661948,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "661949": {
+    "product_id": 661949,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "661954": {
+    "product_id": 661954,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "663430": {
+    "product_id": 663430,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "663431": {
+    "product_id": 663431,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "663432": {
+    "product_id": 663432,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "663433": {
+    "product_id": 663433,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "663434": {
+    "product_id": 663434,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "663435": {
+    "product_id": 663435,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "663436": {
+    "product_id": 663436,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "663437": {
+    "product_id": 663437,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "663438": {
+    "product_id": 663438,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "663439": {
+    "product_id": 663439,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "663440": {
+    "product_id": 663440,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "663441": {
+    "product_id": 663441,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "663442": {
+    "product_id": 663442,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "663443": {
+    "product_id": 663443,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "663444": {
+    "product_id": 663444,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "663445": {
+    "product_id": 663445,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "663446": {
+    "product_id": 663446,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "664881": {
+    "product_id": 664881,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "664882": {
+    "product_id": 664882,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "664883": {
+    "product_id": 664883,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "664884": {
+    "product_id": 664884,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "664885": {
+    "product_id": 664885,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "664886": {
+    "product_id": 664886,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "664887": {
+    "product_id": 664887,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "664888": {
+    "product_id": 664888,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "664889": {
+    "product_id": 664889,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "664890": {
+    "product_id": 664890,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "664891": {
+    "product_id": 664891,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "664892": {
+    "product_id": 664892,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "664913": {
+    "product_id": 664913,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "664915": {
+    "product_id": 664915,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "664918": {
+    "product_id": 664918,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "664920": {
+    "product_id": 664920,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "664921": {
+    "product_id": 664921,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "664922": {
+    "product_id": 664922,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "664923": {
+    "product_id": 664923,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "664924": {
+    "product_id": 664924,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "664925": {
+    "product_id": 664925,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "664926": {
+    "product_id": 664926,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "664927": {
+    "product_id": 664927,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "664928": {
+    "product_id": 664928,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "664929": {
+    "product_id": 664929,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "664930": {
+    "product_id": 664930,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "664931": {
+    "product_id": 664931,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "664932": {
+    "product_id": 664932,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "664933": {
+    "product_id": 664933,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "664934": {
+    "product_id": 664934,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "664937": {
+    "product_id": 664937,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "664938": {
+    "product_id": 664938,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "664940": {
+    "product_id": 664940,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "664941": {
+    "product_id": 664941,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "664942": {
+    "product_id": 664942,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "664944": {
+    "product_id": 664944,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "664945": {
+    "product_id": 664945,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "664946": {
+    "product_id": 664946,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "664948": {
+    "product_id": 664948,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "664950": {
+    "product_id": 664950,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "664951": {
+    "product_id": 664951,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "664952": {
+    "product_id": 664952,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "664953": {
+    "product_id": 664953,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "664956": {
+    "product_id": 664956,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "664961": {
+    "product_id": 664961,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "664963": {
+    "product_id": 664963,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "664966": {
+    "product_id": 664966,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "664969": {
+    "product_id": 664969,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "664970": {
+    "product_id": 664970,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "664972": {
+    "product_id": 664972,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "665009": {
+    "product_id": 665009,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "665011": {
+    "product_id": 665011,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "665012": {
+    "product_id": 665012,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "665013": {
+    "product_id": 665013,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "665014": {
+    "product_id": 665014,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "665015": {
+    "product_id": 665015,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "665016": {
+    "product_id": 665016,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "665017": {
+    "product_id": 665017,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "665019": {
+    "product_id": 665019,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "665020": {
+    "product_id": 665020,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "665023": {
+    "product_id": 665023,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "665027": {
+    "product_id": 665027,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "665028": {
+    "product_id": 665028,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "665029": {
+    "product_id": 665029,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "665031": {
+    "product_id": 665031,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "665032": {
+    "product_id": 665032,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "665033": {
+    "product_id": 665033,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "665034": {
+    "product_id": 665034,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "665035": {
+    "product_id": 665035,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "665133": {
+    "product_id": 665133,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "665134": {
+    "product_id": 665134,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "665136": {
+    "product_id": 665136,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "665138": {
+    "product_id": 665138,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "665139": {
+    "product_id": 665139,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "665140": {
+    "product_id": 665140,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "665141": {
+    "product_id": 665141,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "665142": {
+    "product_id": 665142,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "665143": {
+    "product_id": 665143,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "665144": {
+    "product_id": 665144,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "665486": {
+    "product_id": 665486,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "665487": {
+    "product_id": 665487,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "665590": {
+    "product_id": 665590,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "665591": {
+    "product_id": 665591,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "665592": {
+    "product_id": 665592,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "665593": {
+    "product_id": 665593,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "665644": {
+    "product_id": 665644,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "665645": {
+    "product_id": 665645,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666363": {
+    "product_id": 666363,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666364": {
+    "product_id": 666364,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666365": {
+    "product_id": 666365,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666368": {
+    "product_id": 666368,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666369": {
+    "product_id": 666369,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666373": {
+    "product_id": 666373,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666395": {
+    "product_id": 666395,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666398": {
+    "product_id": 666398,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666402": {
+    "product_id": 666402,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666406": {
+    "product_id": 666406,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666410": {
+    "product_id": 666410,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666414": {
+    "product_id": 666414,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666415": {
+    "product_id": 666415,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666425": {
+    "product_id": 666425,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666429": {
+    "product_id": 666429,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666430": {
+    "product_id": 666430,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666434": {
+    "product_id": 666434,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666437": {
+    "product_id": 666437,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666440": {
+    "product_id": 666440,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666442": {
+    "product_id": 666442,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666446": {
+    "product_id": 666446,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666454": {
+    "product_id": 666454,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666459": {
+    "product_id": 666459,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666461": {
+    "product_id": 666461,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666463": {
+    "product_id": 666463,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666465": {
+    "product_id": 666465,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666467": {
+    "product_id": 666467,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666468": {
+    "product_id": 666468,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666469": {
+    "product_id": 666469,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666471": {
+    "product_id": 666471,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666473": {
+    "product_id": 666473,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666474": {
+    "product_id": 666474,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666476": {
+    "product_id": 666476,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666477": {
+    "product_id": 666477,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666478": {
+    "product_id": 666478,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666480": {
+    "product_id": 666480,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666481": {
+    "product_id": 666481,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666483": {
+    "product_id": 666483,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666484": {
+    "product_id": 666484,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666485": {
+    "product_id": 666485,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666486": {
+    "product_id": 666486,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666487": {
+    "product_id": 666487,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666488": {
+    "product_id": 666488,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666489": {
+    "product_id": 666489,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666490": {
+    "product_id": 666490,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666491": {
+    "product_id": 666491,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666492": {
+    "product_id": 666492,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666493": {
+    "product_id": 666493,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666494": {
+    "product_id": 666494,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666495": {
+    "product_id": 666495,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666497": {
+    "product_id": 666497,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666498": {
+    "product_id": 666498,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666500": {
+    "product_id": 666500,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666501": {
+    "product_id": 666501,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666504": {
+    "product_id": 666504,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666505": {
+    "product_id": 666505,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666506": {
+    "product_id": 666506,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666580": {
+    "product_id": 666580,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666581": {
+    "product_id": 666581,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666582": {
+    "product_id": 666582,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666583": {
+    "product_id": 666583,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666584": {
+    "product_id": 666584,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666585": {
+    "product_id": 666585,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666586": {
+    "product_id": 666586,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666587": {
+    "product_id": 666587,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666588": {
+    "product_id": 666588,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666589": {
+    "product_id": 666589,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666590": {
+    "product_id": 666590,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666592": {
+    "product_id": 666592,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666594": {
+    "product_id": 666594,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666595": {
+    "product_id": 666595,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666598": {
+    "product_id": 666598,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666600": {
+    "product_id": 666600,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666601": {
+    "product_id": 666601,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666719": {
+    "product_id": 666719,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666720": {
+    "product_id": 666720,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666721": {
+    "product_id": 666721,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666779": {
+    "product_id": 666779,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666780": {
+    "product_id": 666780,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666781": {
+    "product_id": 666781,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666782": {
+    "product_id": 666782,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666783": {
+    "product_id": 666783,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666784": {
+    "product_id": 666784,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666785": {
+    "product_id": 666785,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666786": {
+    "product_id": 666786,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666787": {
+    "product_id": 666787,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666788": {
+    "product_id": 666788,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666789": {
+    "product_id": 666789,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666790": {
+    "product_id": 666790,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666791": {
+    "product_id": 666791,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666792": {
+    "product_id": 666792,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666793": {
+    "product_id": 666793,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666794": {
+    "product_id": 666794,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666795": {
+    "product_id": 666795,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666796": {
+    "product_id": 666796,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666797": {
+    "product_id": 666797,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666799": {
+    "product_id": 666799,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666800": {
+    "product_id": 666800,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666801": {
+    "product_id": 666801,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666802": {
+    "product_id": 666802,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666803": {
+    "product_id": 666803,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666804": {
+    "product_id": 666804,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666805": {
+    "product_id": 666805,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666806": {
+    "product_id": 666806,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666808": {
+    "product_id": 666808,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666809": {
+    "product_id": 666809,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666811": {
+    "product_id": 666811,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666812": {
+    "product_id": 666812,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666813": {
+    "product_id": 666813,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666814": {
+    "product_id": 666814,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666816": {
+    "product_id": 666816,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666817": {
+    "product_id": 666817,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666819": {
+    "product_id": 666819,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666821": {
+    "product_id": 666821,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666822": {
+    "product_id": 666822,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666824": {
+    "product_id": 666824,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666825": {
+    "product_id": 666825,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666826": {
+    "product_id": 666826,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666827": {
+    "product_id": 666827,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666828": {
+    "product_id": 666828,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666829": {
+    "product_id": 666829,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666830": {
+    "product_id": 666830,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666831": {
+    "product_id": 666831,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666832": {
+    "product_id": 666832,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666833": {
+    "product_id": 666833,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666834": {
+    "product_id": 666834,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666835": {
+    "product_id": 666835,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666836": {
+    "product_id": 666836,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666837": {
+    "product_id": 666837,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666838": {
+    "product_id": 666838,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666839": {
+    "product_id": 666839,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666840": {
+    "product_id": 666840,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666842": {
+    "product_id": 666842,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666845": {
+    "product_id": 666845,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666847": {
+    "product_id": 666847,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666848": {
+    "product_id": 666848,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666849": {
+    "product_id": 666849,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666850": {
+    "product_id": 666850,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666851": {
+    "product_id": 666851,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666852": {
+    "product_id": 666852,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666853": {
+    "product_id": 666853,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666854": {
+    "product_id": 666854,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666855": {
+    "product_id": 666855,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666856": {
+    "product_id": 666856,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666857": {
+    "product_id": 666857,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666858": {
+    "product_id": 666858,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666859": {
+    "product_id": 666859,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666860": {
+    "product_id": 666860,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666861": {
+    "product_id": 666861,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666862": {
+    "product_id": 666862,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666863": {
+    "product_id": 666863,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666864": {
+    "product_id": 666864,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666865": {
+    "product_id": 666865,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666866": {
+    "product_id": 666866,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666867": {
+    "product_id": 666867,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666868": {
+    "product_id": 666868,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666869": {
+    "product_id": 666869,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666870": {
+    "product_id": 666870,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666871": {
+    "product_id": 666871,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666872": {
+    "product_id": 666872,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666873": {
+    "product_id": 666873,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666874": {
+    "product_id": 666874,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666875": {
+    "product_id": 666875,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666876": {
+    "product_id": 666876,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666877": {
+    "product_id": 666877,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666878": {
+    "product_id": 666878,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666879": {
+    "product_id": 666879,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666880": {
+    "product_id": 666880,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666881": {
+    "product_id": 666881,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666882": {
+    "product_id": 666882,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666883": {
+    "product_id": 666883,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666885": {
+    "product_id": 666885,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666886": {
+    "product_id": 666886,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666887": {
+    "product_id": 666887,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "666888": {
+    "product_id": 666888,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "668208": {
+    "product_id": 668208,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "668209": {
+    "product_id": 668209,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "668210": {
+    "product_id": 668210,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "668211": {
+    "product_id": 668211,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "668212": {
+    "product_id": 668212,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "668213": {
+    "product_id": 668213,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "668214": {
+    "product_id": 668214,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "668215": {
+    "product_id": 668215,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:32.034187"
+  },
+  "662881": {
+    "product_id": 662881,
+    "low_price": 7.82,
+    "mid_price": 11.31,
+    "high_price": 27.99,
+    "market_price": 11.35,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:33.305464"
+  },
+  "662882": {
+    "product_id": 662882,
+    "low_price": 16.99,
+    "mid_price": 30.0,
+    "high_price": 49.9,
+    "market_price": 16.07,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:33.305464"
+  },
+  "662884": {
+    "product_id": 662884,
+    "low_price": 4.05,
+    "mid_price": 6.58,
+    "high_price": 14.99,
+    "market_price": 4.47,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:33.305464"
+  },
+  "662885": {
+    "product_id": 662885,
+    "low_price": 24.0,
+    "mid_price": 47.95,
+    "high_price": 69.99,
+    "market_price": 9.75,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:33.305464"
+  },
+  "662886": {
+    "product_id": 662886,
+    "low_price": 21.53,
+    "mid_price": 26.44,
+    "high_price": 35.0,
+    "market_price": 22.03,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:33.305464"
+  },
+  "662887": {
+    "product_id": 662887,
+    "low_price": 11.55,
+    "mid_price": 17.9,
+    "high_price": 54.99,
+    "market_price": 12.37,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:33.305464"
+  },
+  "662888": {
+    "product_id": 662888,
+    "low_price": 25.0,
+    "mid_price": 37.5,
+    "high_price": 50.0,
+    "market_price": 12.54,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:33.305464"
+  },
+  "662889": {
+    "product_id": 662889,
+    "low_price": 29.98,
+    "mid_price": 29.99,
+    "high_price": 29.99,
+    "market_price": 15.12,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:33.305464"
+  },
+  "662890": {
+    "product_id": 662890,
+    "low_price": 19.95,
+    "mid_price": 24.3,
+    "high_price": 250.0,
+    "market_price": 21.19,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:33.305464"
+  },
+  "662891": {
+    "product_id": 662891,
+    "low_price": 50.0,
+    "mid_price": 100.0,
+    "high_price": 199.98,
+    "market_price": 53.53,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:33.305464"
+  },
+  "662892": {
+    "product_id": 662892,
+    "low_price": 7.0,
+    "mid_price": 9.99,
+    "high_price": 25.0,
+    "market_price": 7.66,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:33.305464"
+  },
+  "662894": {
+    "product_id": 662894,
+    "low_price": 45.99,
+    "mid_price": 49.99,
+    "high_price": 50.0,
+    "market_price": 22.49,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:33.305464"
+  },
+  "662895": {
+    "product_id": 662895,
+    "low_price": 7.34,
+    "mid_price": 17.1,
+    "high_price": 50.0,
+    "market_price": 9.2,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:33.305464"
+  },
+  "662896": {
+    "product_id": 662896,
+    "low_price": 49.0,
+    "mid_price": 79.47,
+    "high_price": 79.95,
+    "market_price": 26.14,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:33.305464"
+  },
+  "662897": {
+    "product_id": 662897,
+    "low_price": 10.84,
+    "mid_price": 17.92,
+    "high_price": 25.0,
+    "market_price": 10.8,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:33.305464"
+  },
+  "662898": {
+    "product_id": 662898,
+    "low_price": 500.0,
+    "mid_price": 649.99,
+    "high_price": 800.0,
+    "market_price": 309.06,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:33.305464"
+  },
+  "662899": {
+    "product_id": 662899,
+    "low_price": 23.28,
+    "mid_price": 24.77,
+    "high_price": 26.63,
+    "market_price": 23.28,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:33.305464"
+  },
+  "662900": {
+    "product_id": 662900,
+    "low_price": 14.0,
+    "mid_price": 20.0,
+    "high_price": 38.67,
+    "market_price": 15.52,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:33.305464"
+  },
+  "662901": {
+    "product_id": 662901,
+    "low_price": 9.99,
+    "mid_price": 12.0,
+    "high_price": 20.0,
+    "market_price": 10.18,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:33.305464"
+  },
+  "662902": {
+    "product_id": 662902,
+    "low_price": 14.03,
+    "mid_price": 16.9,
+    "high_price": 999.0,
+    "market_price": 14.62,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:33.305464"
+  },
+  "662903": {
+    "product_id": 662903,
+    "low_price": 12.0,
+    "mid_price": 14.89,
+    "high_price": 30.0,
+    "market_price": 14.02,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:33.305464"
+  },
+  "662904": {
+    "product_id": 662904,
+    "low_price": 49.9,
+    "mid_price": 49.9,
+    "high_price": 49.9,
+    "market_price": 20.0,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:33.305464"
+  },
+  "662906": {
+    "product_id": 662906,
+    "low_price": 9.47,
+    "mid_price": 12.5,
+    "high_price": 21.21,
+    "market_price": 10.02,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:33.305464"
+  },
+  "662907": {
+    "product_id": 662907,
+    "low_price": 0.99,
+    "mid_price": 1.74,
+    "high_price": 6.99,
+    "market_price": 1.4,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:33.305464"
+  },
+  "662908": {
+    "product_id": 662908,
+    "low_price": 1.09,
+    "mid_price": 2.0,
+    "high_price": 10.0,
+    "market_price": 1.4,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:33.305464"
+  },
+  "662909": {
+    "product_id": 662909,
+    "low_price": 0.35,
+    "mid_price": 0.73,
+    "high_price": 4.5,
+    "market_price": 0.45,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:33.305464"
+  },
+  "662910": {
+    "product_id": 662910,
+    "low_price": 0.49,
+    "mid_price": 1.16,
+    "high_price": 5.0,
+    "market_price": 0.6,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:33.305464"
+  },
+  "662911": {
+    "product_id": 662911,
+    "low_price": 0.61,
+    "mid_price": 1.15,
+    "high_price": 2.5,
+    "market_price": 0.78,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:33.305464"
+  },
+  "662912": {
+    "product_id": 662912,
+    "low_price": 0.44,
+    "mid_price": 0.99,
+    "high_price": 2.99,
+    "market_price": 0.6,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:33.305464"
+  },
+  "662913": {
+    "product_id": 662913,
+    "low_price": 0.19,
+    "mid_price": 0.49,
+    "high_price": 2.5,
+    "market_price": 0.31,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:33.305464"
+  },
+  "662914": {
+    "product_id": 662914,
+    "low_price": 0.1,
+    "mid_price": 0.5,
+    "high_price": 4.9,
+    "market_price": 0.39,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:33.305464"
+  },
+  "662915": {
+    "product_id": 662915,
+    "low_price": 0.25,
+    "mid_price": 0.63,
+    "high_price": 3.0,
+    "market_price": 0.38,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:33.305464"
+  },
+  "662916": {
+    "product_id": 662916,
+    "low_price": 0.42,
+    "mid_price": 1.03,
+    "high_price": 5.0,
+    "market_price": 0.76,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:33.305464"
+  },
+  "662917": {
+    "product_id": 662917,
+    "low_price": 0.6,
+    "mid_price": 1.28,
+    "high_price": 10.0,
+    "market_price": 0.83,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:33.305464"
+  },
+  "662918": {
+    "product_id": 662918,
+    "low_price": 0.32,
+    "mid_price": 0.53,
+    "high_price": 4.99,
+    "market_price": 0.43,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:33.305464"
+  },
+  "662919": {
+    "product_id": 662919,
+    "low_price": 0.24,
+    "mid_price": 0.9,
+    "high_price": 3.5,
+    "market_price": 0.45,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:33.305464"
+  },
+  "662920": {
+    "product_id": 662920,
+    "low_price": 0.34,
+    "mid_price": 1.0,
+    "high_price": 3.33,
+    "market_price": 0.62,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:33.305464"
+  },
+  "662921": {
+    "product_id": 662921,
+    "low_price": 1.1,
+    "mid_price": 2.5,
+    "high_price": 9.9,
+    "market_price": 1.53,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:33.305464"
+  },
+  "662922": {
+    "product_id": 662922,
+    "low_price": 1.32,
+    "mid_price": 2.75,
+    "high_price": 6.87,
+    "market_price": 2.14,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:33.305464"
+  },
+  "662923": {
+    "product_id": 662923,
+    "low_price": 1.17,
+    "mid_price": 3.77,
+    "high_price": 10.75,
+    "market_price": 1.96,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:33.305464"
+  },
+  "668440": {
+    "product_id": 668440,
+    "low_price": 74.69,
+    "mid_price": 97.86,
+    "high_price": 124.99,
+    "market_price": 74.62,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:33.305464"
+  },
+  "668441": {
+    "product_id": 668441,
+    "low_price": 0.95,
+    "mid_price": 2.38,
+    "high_price": 100.0,
+    "market_price": 1.3,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:33.305464"
+  },
+  "668450": {
+    "product_id": 668450,
+    "low_price": 3.79,
+    "mid_price": 8.95,
+    "high_price": 44.98,
+    "market_price": 5.89,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:33.305464"
+  },
+  "669250": {
+    "product_id": 669250,
+    "low_price": 2599.0,
+    "mid_price": 2899.5,
+    "high_price": 3200.0,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:33.305464"
+  },
+  "669251": {
+    "product_id": 669251,
+    "low_price": 2000.0,
+    "mid_price": 2000.0,
+    "high_price": 2000.0,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:33.305464"
+  },
+  "669252": {
+    "product_id": 669252,
+    "low_price": 2499.99,
+    "mid_price": 3000.0,
+    "high_price": 4500.0,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:33.305464"
+  },
+  "669253": {
+    "product_id": 669253,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:33.305464"
+  },
+  "669254": {
+    "product_id": 669254,
+    "low_price": 6969.69,
+    "mid_price": 6969.69,
+    "high_price": 6969.69,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:33.305464"
+  },
+  "669256": {
+    "product_id": 669256,
+    "low_price": 1999.99,
+    "mid_price": 2750.0,
+    "high_price": 3599.99,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:33.305464"
+  },
+  "669257": {
+    "product_id": 669257,
+    "low_price": 3600.0,
+    "mid_price": 3600.0,
+    "high_price": 3600.0,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:33.305464"
+  },
+  "669258": {
+    "product_id": 669258,
+    "low_price": 2200.0,
+    "mid_price": 2850.0,
+    "high_price": 3500.0,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:33.305464"
+  },
+  "669259": {
+    "product_id": 669259,
+    "low_price": 2100.0,
+    "mid_price": 2100.0,
+    "high_price": 2100.0,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:33.305464"
+  },
+  "669260": {
+    "product_id": 669260,
+    "low_price": 4450.0,
+    "mid_price": 4475.0,
+    "high_price": 4500.0,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:33.305464"
+  },
+  "669261": {
+    "product_id": 669261,
+    "low_price": null,
+    "mid_price": null,
+    "high_price": null,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:33.305464"
+  },
+  "669263": {
+    "product_id": 669263,
+    "low_price": 4250.0,
+    "mid_price": 4375.0,
+    "high_price": 4500.0,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:33.305464"
+  },
+  "669265": {
+    "product_id": 669265,
+    "low_price": 4000.0,
+    "mid_price": 4000.0,
+    "high_price": 4000.0,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:33.305464"
+  },
+  "669266": {
+    "product_id": 669266,
+    "low_price": 2600.0,
+    "mid_price": 6300.0,
+    "high_price": 10000.0,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:33.305464"
+  },
+  "669267": {
+    "product_id": 669267,
+    "low_price": 2800.0,
+    "mid_price": 2900.0,
+    "high_price": 3000.0,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:33.305464"
+  },
+  "669268": {
+    "product_id": 669268,
+    "low_price": 2149.99,
+    "mid_price": 2199.99,
+    "high_price": 2200.0,
+    "market_price": null,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:33.305464"
+  },
+  "668439": {
+    "product_id": 668439,
+    "low_price": 110.0,
+    "mid_price": 119.99,
+    "high_price": 224.99,
+    "market_price": 112.87,
+    "direct_low_price": null,
+    "fetched_at": "2025-12-24T14:04:34.578342"
+  }
+}
