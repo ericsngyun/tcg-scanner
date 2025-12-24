@@ -92,6 +92,10 @@ htmlcov/
 *.temp
 .cache/
 *.bak
+logs/
+
+# Claude Code
+.claude/
 
 # Large files (use Git LFS)
 *.zip
