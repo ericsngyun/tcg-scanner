@@ -1,0 +1,41 @@
+# Vector Index Configuration
+
+# Index settings
+index:
+  library: annoy  # alternatives: usearch, hnswlib
+  metric: angular  # cosine similarity
+  embedding_dim: 256
+
+# Annoy-specific settings
+annoy:
+  num_trees: 10  # more trees = better accuracy, slower build
+  search_k: -1   # -1 = num_trees * num_results * D
+
+# USearch alternative settings (if using usearch)
+usearch:
+  connectivity: 16  # M parameter
+  expansion_add: 128
+  expansion_search: 64
+
+# Per-game indices
+games:
+  riftbound:
+    cards_file: data/cards/riftbound.json
+    embeddings_file: data/embeddings/riftbound.npy
+    output_file: models/indices/riftbound.ann
+
+  optcg:
+    cards_file: data/cards/optcg.json
+    embeddings_file: data/embeddings/optcg.npy
+    output_file: models/indices/optcg.ann
+
+  pokemon:
+    cards_file: data/cards/pokemon.json
+    embeddings_file: data/embeddings/pokemon.npy
+    output_file: models/indices/pokemon.ann
+
+# Search settings
+search:
+  default_k: 5  # return top-5 matches
+  confidence_threshold: 0.8
+  fallback_k: 10  # if top result below threshold

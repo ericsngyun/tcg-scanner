@@ -1,0 +1,47 @@
+# YOLOv8 Card Detection Configuration
+
+# Model
+model:
+  name: yolov8n  # nano variant for mobile
+  pretrained: true
+  num_classes: 1  # single class: "card"
+
+# Data
+data:
+  train_path: data/detection/train
+  val_path: data/detection/val
+  image_size: 640
+  batch_size: 32
+  num_workers: 4
+
+# Training
+training:
+  epochs: 100
+  optimizer: AdamW
+  learning_rate: 0.001
+  weight_decay: 0.0005
+  warmup_epochs: 3
+  patience: 20  # early stopping
+
+# Augmentation
+augmentation:
+  hsv_h: 0.015  # hue
+  hsv_s: 0.7    # saturation
+  hsv_v: 0.4    # value
+  degrees: 15   # rotation
+  translate: 0.1
+  scale: 0.5
+  shear: 5
+  perspective: 0.001
+  flipud: 0.0   # no vertical flip for cards
+  fliplr: 0.5
+  mosaic: 0.8
+  mixup: 0.1
+
+# Export
+export:
+  formats:
+    - coreml   # iOS
+    - tflite   # Android
+  quantization: int8
+  input_size: [640, 640]

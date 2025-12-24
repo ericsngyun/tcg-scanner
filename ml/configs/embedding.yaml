@@ -1,0 +1,72 @@
+# FastViT Embedding Model Configuration
+
+# Model
+model:
+  backbone: fastvit_t8  # alternatives: fastvit_t12, efficientvit_m2
+  pretrained: true
+  embedding_dim: 256
+  dropout: 0.1
+
+# Data
+data:
+  train_path: data/embedding/train
+  val_path: data/embedding/val
+  image_size: 224
+  batch_size: 64
+  num_workers: 8
+
+# Training
+training:
+  epochs: 50
+  optimizer: AdamW
+  learning_rate: 0.0003
+  weight_decay: 0.05
+  warmup_epochs: 5
+  lr_scheduler: cosine
+  mixed_precision: true
+  gradient_clip: 1.0
+
+# Metric Learning
+metric_learning:
+  loss: arcface  # alternatives: cosface, triplet
+  arcface:
+    margin: 0.5
+    scale: 64
+  mining:
+    type: hard
+    margin: 0.2
+
+# Augmentation
+augmentation:
+  train:
+    - resize: {size: 256}
+    - random_crop: {size: 224}
+    - horizontal_flip: {p: 0.5}
+    - color_jitter: {brightness: 0.2, contrast: 0.2, saturation: 0.2}
+    - random_rotation: {degrees: 15}
+    - random_perspective: {distortion_scale: 0.1, p: 0.3}
+    - gaussian_blur: {kernel_size: 3, p: 0.1}
+    - normalize: {mean: [0.485, 0.456, 0.406], std: [0.229, 0.224, 0.225]}
+  val:
+    - resize: {size: 256}
+    - center_crop: {size: 224}
+    - normalize: {mean: [0.485, 0.456, 0.406], std: [0.229, 0.224, 0.225]}
+
+# Validation
+validation:
+  metrics:
+    - recall_at_1
+    - recall_at_5
+    - map_at_r
+  val_frequency: 1  # validate every epoch
+
+# Export
+export:
+  formats:
+    - coreml
+    - tflite
+    - onnx
+  quantization:
+    method: qat  # quantization-aware training
+    precision: int8
+  input_size: [224, 224]

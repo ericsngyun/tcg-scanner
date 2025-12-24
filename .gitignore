@@ -1,0 +1,99 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+.venv/
+venv/
+ENV/
+
+# ML/Data
+*.pt
+*.pth
+*.onnx
+*.tflite
+*.mlmodel
+*.mlpackage
+*.h5
+*.pb
+*.savedmodel/
+ml/models/exports/
+ml/data/raw/
+ml/data/processed/
+*.ann
+*.usearch
+wandb/
+mlruns/
+lightning_logs/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# iOS
+mobile/ios/Pods/
+mobile/ios/*.xcworkspace
+mobile/ios/build/
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# Android
+mobile/android/.gradle/
+mobile/android/build/
+mobile/android/local.properties
+mobile/android/*.apk
+mobile/android/*.aab
+*.keystore
+!debug.keystore
+
+# Flutter
+mobile/flutter/.dart_tool/
+mobile/flutter/.packages
+mobile/flutter/build/
+*.flutter-plugins
+
+# Node.js (backend)
+node_modules/
+npm-debug.log
+yarn-error.log
+.env
+.env.local
+.env.*.local
+
+# Testing
+.coverage
+htmlcov/
+.pytest_cache/
+
+# Misc
+*.log
+*.tmp
+*.temp
+.cache/
+*.bak
+
+# Large files (use Git LFS)
+*.zip
+*.tar.gz
+*.rar
