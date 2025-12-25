@@ -1,4 +1,5 @@
 # YOLOv8 Card Detection Configuration
+# Optimized for synthetic training data with heavy augmentation
 
 # Model
 model:
@@ -11,32 +12,34 @@ data:
   train_path: data/detection/train
   val_path: data/detection/val
   image_size: 640
-  batch_size: 32
+  batch_size: 32  # Increase to 64 on Colab Pro with A100
   num_workers: 4
 
 # Training
 training:
-  epochs: 100
+  epochs: 150  # Increased for synthetic data
   optimizer: AdamW
   learning_rate: 0.001
   weight_decay: 0.0005
-  warmup_epochs: 3
-  patience: 20  # early stopping
+  warmup_epochs: 5
+  patience: 30  # early stopping (increased for synthetic data)
+  label_smoothing: 0.1  # Helps with synthetic data
 
-# Augmentation
+# Augmentation - Enhanced for card detection
 augmentation:
-  hsv_h: 0.015  # hue
-  hsv_s: 0.7    # saturation
-  hsv_v: 0.4    # value
-  degrees: 15   # rotation
-  translate: 0.1
-  scale: 0.5
-  shear: 5
-  perspective: 0.001
+  hsv_h: 0.02   # hue (slight increase)
+  hsv_s: 0.8    # saturation (increased)
+  hsv_v: 0.5    # value (increased for lighting variation)
+  degrees: 30   # rotation (increased for varied angles)
+  translate: 0.15
+  scale: 0.6    # scale variation
+  shear: 10     # increased shear
+  perspective: 0.002  # increased perspective distortion
   flipud: 0.0   # no vertical flip for cards
   fliplr: 0.5
-  mosaic: 0.8
-  mixup: 0.1
+  mosaic: 0.9   # high mosaic for varied scenes
+  mixup: 0.2    # increased mixup
+  copy_paste: 0.3  # copy-paste augmentation for multi-card scenes
 
 # Export
 export:
@@ -45,3 +48,13 @@ export:
     - tflite   # Android
   quantization: int8
   input_size: [640, 640]
+
+# Synthetic Data Generation
+synthetic_data:
+  script: training/detection/generate_synthetic_data.py
+  num_train: 10000
+  num_val: 2000
+  min_cards: 1
+  max_cards: 4
+  min_scale: 0.15
+  max_scale: 0.55

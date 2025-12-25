@@ -1,64 +1,224 @@
 # FastViT Embedding Model Configuration
+# Optimized for high accuracy with single-sample-per-class metric learning
 
-# Model
+# Model - Upgraded for accuracy
 model:
-  backbone: fastvit_t8  # alternatives: fastvit_t12, efficientvit_m2
+  backbone: fastvit_t12  # Upgraded from t8 for better accuracy
   pretrained: true
-  embedding_dim: 256
-  dropout: 0.1
+  embedding_dim: 384     # Increased from 256 for more capacity
+  dropout: 0.2           # Increased for regularization
 
 # Data
 data:
   train_path: data/embedding/train
   val_path: data/embedding/val
   image_size: 224
-  batch_size: 64
+  batch_size: 64  # 16 cards x 4 views per card
   num_workers: 8
+
+# Multi-View Training (for single-sample-per-class)
+multi_view:
+  enabled: true
+  views_per_card: 4  # Generate 4 augmented views per card per batch
+  classes_per_batch: 16  # Number of unique cards per batch
 
 # Training
 training:
-  epochs: 50
+  epochs: 100  # Increased for thorough training
   optimizer: AdamW
   learning_rate: 0.0003
   weight_decay: 0.05
-  warmup_epochs: 5
+  warmup_epochs: 10
   lr_scheduler: cosine
   mixed_precision: true
   gradient_clip: 1.0
 
+  # Training phases
+  phases:
+    warmup:
+      epochs: 10
+      augmentation_intensity: 0.5  # Start with lighter augmentation
+    main:
+      epochs: 70
+      augmentation_intensity: 1.0  # Full augmentation
+    finetune:
+      epochs: 20
+      learning_rate: 0.00003  # 10x lower
+      augmentation_intensity: 0.5  # Reduce for refinement
+
 # Metric Learning
 metric_learning:
-  loss: arcface  # alternatives: cosface, triplet
+  loss: arcface
   arcface:
     margin: 0.5
     scale: 64
   mining:
     type: hard
-    margin: 0.2
+    margin: 0.3  # Increased from 0.2
 
-# Augmentation
+  # Memory bank for cross-batch mining
+  memory_bank:
+    enabled: true
+    size: 2048  # Store embeddings for cross-batch negatives
+    momentum: 0.9
+
+# Heavy Augmentation Pipeline (using Albumentations)
+# Designed to simulate real-world camera conditions from single official images
 augmentation:
-  train:
-    - resize: {size: 256}
-    - random_crop: {size: 224}
-    - horizontal_flip: {p: 0.5}
-    - color_jitter: {brightness: 0.2, contrast: 0.2, saturation: 0.2}
-    - random_rotation: {degrees: 15}
-    - random_perspective: {distortion_scale: 0.1, p: 0.3}
-    - gaussian_blur: {kernel_size: 3, p: 0.1}
-    - normalize: {mean: [0.485, 0.456, 0.406], std: [0.229, 0.224, 0.225]}
-  val:
-    - resize: {size: 256}
-    - center_crop: {size: 224}
-    - normalize: {mean: [0.485, 0.456, 0.406], std: [0.229, 0.224, 0.225]}
+  # Use albumentations for heavy augmentation
+  use_albumentations: true
 
-# Validation
+  train:
+    # Geometric transforms (camera angles)
+    perspective:
+      enabled: true
+      scale: [0.05, 0.15]
+      p: 0.5
+    affine:
+      enabled: true
+      rotate: [-20, 20]
+      shear: [-10, 10]
+      scale: [0.8, 1.2]
+      p: 0.8
+
+    # Lighting simulation
+    brightness_contrast:
+      enabled: true
+      brightness_limit: 0.4
+      contrast_limit: 0.4
+      p: 0.7
+    hue_saturation:
+      enabled: true
+      hue_shift: 10
+      sat_shift: 30
+      val_shift: 30
+      p: 0.5
+    gamma:
+      enabled: true
+      gamma_limit: [60, 140]
+      p: 0.3
+
+    # Shadow/highlight simulation
+    random_shadow:
+      enabled: true
+      num_shadows: [1, 3]
+      p: 0.3
+    sun_flare:
+      enabled: false  # Can be too aggressive
+      p: 0.05
+
+    # Camera quality degradation
+    blur:
+      enabled: true
+      blur_limit: 7
+      motion_blur: true
+      p: 0.4
+    noise:
+      enabled: true
+      gauss_var: [10, 80]
+      iso_noise: true
+      p: 0.5
+    jpeg_compression:
+      enabled: true
+      quality_lower: 60
+      quality_upper: 100
+      p: 0.5
+
+    # Occlusion simulation (fingers, sleeves)
+    coarse_dropout:
+      enabled: true
+      max_holes: 3
+      max_height: 40
+      max_width: 40
+      min_holes: 1
+      min_height: 10
+      min_width: 10
+      p: 0.3
+
+    # Color adjustments
+    channel_dropout:
+      enabled: true
+      channel_drop_range: [1, 1]
+      p: 0.1
+    rgb_shift:
+      enabled: true
+      r_shift: 20
+      g_shift: 20
+      b_shift: 20
+      p: 0.3
+
+    # Card-specific augmentations
+    foil_simulation:
+      enabled: true
+      p: 0.2
+    sleeve_glare:
+      enabled: true
+      p: 0.15
+    edge_wear:
+      enabled: true
+      p: 0.1
+
+    # Always applied
+    resize: 256
+    crop: 224
+    horizontal_flip: 0.5
+    normalize:
+      mean: [0.485, 0.456, 0.406]
+      std: [0.229, 0.224, 0.225]
+
+  val:
+    # Light augmentation for validation (still need some variation)
+    perspective:
+      enabled: true
+      scale: [0.02, 0.08]
+      p: 0.3
+    brightness_contrast:
+      enabled: true
+      brightness_limit: 0.2
+      contrast_limit: 0.2
+      p: 0.3
+    blur:
+      enabled: true
+      blur_limit: 3
+      p: 0.2
+
+    # Always applied
+    resize: 256
+    center_crop: 224
+    normalize:
+      mean: [0.485, 0.456, 0.406]
+      std: [0.229, 0.224, 0.225]
+
+# Validation Metrics
 validation:
   metrics:
-    - recall_at_1
-    - recall_at_5
+    - recall_at_1   # Primary metric (target > 99%)
+    - recall_at_5   # Secondary (target > 99.9%)
     - map_at_r
-  val_frequency: 1  # validate every epoch
+    - embedding_gap  # Distance between positive and nearest negative
+  val_frequency: 1
+
+  # Per-class evaluation
+  per_class_metrics: true
+  confusion_analysis: true
+
+  # Cross-validation for robust evaluation
+  cross_validation:
+    enabled: true
+    folds: 5
+    stratified: true
+
+# Test-Time Augmentation (for inference)
+tta:
+  enabled: true
+  num_augmentations: 5
+  augmentations:
+    - original
+    - horizontal_flip
+    - rotation_10
+    - color_jitter
+    - slight_blur
+  aggregation: mean  # Average embeddings
 
 # Export
 export:
@@ -70,3 +230,16 @@ export:
     method: qat  # quantization-aware training
     precision: int8
   input_size: [224, 224]
+
+# Experiment Tracking
+tracking:
+  wandb:
+    enabled: true
+    project: tcg-scanner
+    tags: [embedding, fastvit-t12, arcface]
+
+  # Checkpointing
+  checkpointing:
+    save_top_k: 5
+    monitor: val_recall_at_1
+    mode: max

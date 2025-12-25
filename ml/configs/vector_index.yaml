@@ -4,7 +4,7 @@
 index:
   library: annoy  # alternatives: usearch, hnswlib
   metric: angular  # cosine similarity
-  embedding_dim: 256
+  embedding_dim: 384  # Updated for FastViT-T12 (was 256 for T8)
 
 # Annoy-specific settings
 annoy:
