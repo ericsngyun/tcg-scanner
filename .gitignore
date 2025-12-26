@@ -10,8 +10,10 @@ dist/
 downloads/
 eggs/
 .eggs/
-lib/
+# Python lib (but not Flutter)
+/lib/
 lib64/
+!mobile/flutter/lib/
 parts/
 sdist/
 var/
@@ -36,6 +38,7 @@ ENV/
 ml/models/exports/
 *.ann
 *.usearch
+*.npy
 wandb/
 mlruns/
 lightning_logs/
