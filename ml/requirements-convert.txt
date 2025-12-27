@@ -1,0 +1,25 @@
+# Requirements for model conversion to TFLite
+# Install with: pip install -r ml/requirements-convert.txt
+
+# PyTorch (for loading models)
+torch>=2.0.0
+torchvision>=0.15.0
+
+# Model architectures
+timm>=0.9.12
+ultralytics>=8.0.0
+
+# ONNX conversion
+onnx>=1.14.0
+onnxruntime>=1.16.0
+
+# TFLite conversion
+tensorflow>=2.13.0
+tf2onnx>=1.14.0
+onnx-tf>=1.10.0
+
+# Utilities
+numpy>=1.24.0
+pillow>=10.0.0
+tqdm>=4.65.0
+pyyaml>=6.0.0
