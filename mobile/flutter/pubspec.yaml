@@ -58,6 +58,7 @@ flutter:
   assets:
     - assets/models/
     - assets/indices/
+    - assets/data/
     - assets/images/
 
   fonts:

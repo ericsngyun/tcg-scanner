@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import 'core/theme/app_theme.dart';
-import 'features/scanner/presentation/pages/scanner_page.dart';
+import 'features/scan/screens/scan_screen.dart';
 import 'features/collection/presentation/pages/collection_page.dart';
 
 class TCGScannerApp extends ConsumerWidget {
@@ -32,7 +32,7 @@ class _MainNavigationPageState extends State<MainNavigationPage> {
   int _currentIndex = 0;
 
   final _pages = const [
-    ScannerPage(),
+    ScanScreen(),
     CollectionPage(),
   ];
 
