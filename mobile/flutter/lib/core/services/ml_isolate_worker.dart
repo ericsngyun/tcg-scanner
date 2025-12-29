@@ -169,6 +169,15 @@ void mlIsolateEntryPoint(SendPort mainSendPort) async {
                 embeddingDim,
               );
 
+              // Log top match for debugging
+              if (matches.isNotEmpty) {
+                final topMatch = matches[0];
+                final cardJson = topMatch['card'] as Map<String, dynamic>;
+                final cardName = cardJson['name'] ?? 'Unknown';
+                final similarity = topMatch['similarity'] as double;
+                print('🎯 Top match: "$cardName" (similarity: ${(similarity * 100).toStringAsFixed(1)}%)');
+              }
+
               results.add({
                 'detection': detection,
                 'matches': matches,
@@ -396,16 +405,34 @@ Future<List<List<List<List<double>>>>> _preprocessForEmbedding(
     throw Exception('Failed to decode card image');
   }
 
-  img.Image resized = img.copyResize(
+  // IMPORTANT: Match training preprocessing exactly!
+  // Training uses: Resize(256, 256) -> CenterCrop(224, 224)
+  // This was causing misidentification by using direct resize to 224
+  
+  // Step 1: Resize to 256x256 (maintaining aspect ratio like training)
+  const intermediateSize = 256;
+  img.Image resized256 = img.copyResize(
     image,
-    width: targetSize,
-    height: targetSize,
+    width: intermediateSize,
+    height: intermediateSize,
     interpolation: img.Interpolation.linear,
   );
 
+  // Step 2: Center crop to 224x224
+  final cropOffset = (intermediateSize - targetSize) ~/ 2; // (256-224)/2 = 16
+  img.Image cropped = img.copyCrop(
+    resized256,
+    x: cropOffset,
+    y: cropOffset,
+    width: targetSize,
+    height: targetSize,
+  );
+
+  // ImageNet normalization (same as training)
   const imagenetMean = [0.485, 0.456, 0.406];
   const imagenetStd = [0.229, 0.224, 0.225];
 
+  // NCHW format for embedding model
   final tensor = List.generate(
     1,
     (_) => List.generate(
@@ -415,7 +442,7 @@ Future<List<List<List<List<double>>>>> _preprocessForEmbedding(
         (y) => List.generate(
           targetSize,
           (x) {
-            final pixel = resized.getPixel(x, y);
+            final pixel = cropped.getPixel(x, y);
             double value;
 
             if (c == 0) {
