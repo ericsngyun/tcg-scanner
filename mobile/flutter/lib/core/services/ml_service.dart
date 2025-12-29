@@ -1,4 +1,5 @@
 import 'dart:convert';
+import 'dart:io' show Platform;
 import 'dart:typed_data';
 import 'dart:ui' as ui;
 import 'dart:math';
@@ -34,16 +35,23 @@ class MLService {
     if (_isInitialized) return;
 
     try {
+      // Use CPU with multi-threading
+      // Note: GPU delegate (Metal/OpenGL) doesn't support all operations in
+      // YOLOv8-nano and FastViT-T12 models (DEPTHWISE_CONV_2D, GELU not supported)
+      // Future: Convert models to GPU-compatible format or use different acceleration
+      final options = InterpreterOptions()..threads = 4;
+      print('✅ Using CPU inference with 4 threads');
+
       // Load detection model (YOLOv8-nano)
       _detectionModel = await Interpreter.fromAsset(
         'assets/models/detection.tflite',
-        options: InterpreterOptions()..threads = 4,
+        options: options,
       );
 
       // Load embedding model (FastViT-T12)
       _embeddingModel = await Interpreter.fromAsset(
         'assets/models/embedding.tflite',
-        options: InterpreterOptions()..threads = 4,
+        options: options,
       );
 
       // Load card database and embeddings
