@@ -179,10 +179,16 @@ void mlIsolateEntryPoint(SendPort mainSendPort) async {
             totalStopwatch.stop();
             print('🔧 Isolate: Total scan took ${totalStopwatch.elapsedMilliseconds}ms');
 
-            // Send results back to main isolate
+            // Send results back to main isolate with debug stats
             mainSendPort.send({
               'type': 'scanResult',
               'results': results,
+              'debugStats': {
+                'inputWidth': frameData.width,
+                'inputHeight': frameData.height,
+                'detectionCount': detections.length,
+                'totalLatencyMs': totalStopwatch.elapsedMilliseconds,
+              },
             });
             break;
 

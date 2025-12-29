@@ -7,11 +7,19 @@ import '../../../core/services/camera_service.dart';
 import '../../../core/services/ml_service.dart';
 import '../../../core/services/card_tracker.dart';
 import '../../../core/services/recognition_stabilizer.dart';
+import '../../../core/services/border_detector.dart';
+import '../../../core/services/ml_debug_service.dart';
 import '../../../core/models/frame_data.dart';
 import '../../../core/models/recognition_result.dart';
 import '../widgets/ml_overlay.dart';
 import '../widgets/result_card_widget.dart';
 import '../widgets/scan_instructions.dart';
+
+/// Detection method options.
+enum DetectionMethod {
+  yolo,      // ML-based (may have accuracy issues)
+  border,    // Edge-based (simpler but more robust)
+}
 
 /// Main scan screen with camera preview and ML overlay.
 /// 
@@ -33,6 +41,8 @@ class _ScanScreenState extends State<ScanScreen>
   final _mlService = MLService.instance;
   final _cardTracker = CardTracker();
   final _recognitionStabilizer = MultiCardRecognitionStabilizer();
+  final _borderDetector = BorderDetector();
+  final _debugService = MLDebugService.instance;
 
   List<TrackedCard> _trackedCards = [];
   List<ScanResult> _rawResults = [];
@@ -41,6 +51,8 @@ class _ScanScreenState extends State<ScanScreen>
   bool _isProcessingFrame = false;
   String? _error;
   String _initStatus = 'Starting...';
+  DetectionMethod _detectionMethod = DetectionMethod.yolo;
+  bool _debugMode = false;
 
   late AnimationController _pulseController;
 
