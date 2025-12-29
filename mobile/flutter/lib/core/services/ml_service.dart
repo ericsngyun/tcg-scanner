@@ -8,6 +8,7 @@ import 'package:tflite_flutter/tflite_flutter.dart';
 import 'package:image/image.dart' as img;
 
 import '../models/card.dart';
+import '../models/frame_data.dart';
 import '../models/recognition_result.dart';
 
 /// Singleton service for ML model inference.
@@ -109,7 +110,7 @@ class MLService {
 
   /// Detect cards in an image frame.
   /// Returns list of detected card regions.
-  Future<List<DetectionResult>> detectCards(Uint8List imageBytes) async {
+  Future<List<DetectionResult>> detectCards(FrameData frameData) async {
     if (_detectionModel == null) {
       return [];
     }
@@ -117,7 +118,7 @@ class MLService {
     final stopwatch = Stopwatch()..start();
 
     // Preprocess image to model input format
-    final input = await _preprocessForDetection(imageBytes);
+    final input = await _preprocessForDetection(frameData);
 
     // Run inference
     final outputShape = _detectionModel!.getOutputTensor(0).shape;
@@ -198,17 +199,25 @@ class MLService {
   }
 
   /// Full pipeline: detect cards and recognize each one.
-  Future<List<ScanResult>> scanFrame(Uint8List imageBytes) async {
+  Future<List<ScanResult>> scanFrame(FrameData frameData) async {
     final totalStopwatch = Stopwatch()..start();
 
     // Step 1: Detect cards
-    final detections = await detectCards(imageBytes);
+    final detections = await detectCards(frameData);
 
     final results = <ScanResult>[];
 
+    // Convert FrameData to Image for cropping (temporary until we optimize cropping)
+    final image = img.Image.fromBytes(
+      width: frameData.width,
+      height: frameData.height,
+      bytes: frameData.bytes.buffer,
+      numChannels: 3,
+    );
+
     for (final detection in detections) {
       // Step 2: Crop detected region
-      final cardImage = await _cropRegion(imageBytes, detection.boundingBox);
+      final cardImage = await _cropRegion(image, detection.boundingBox);
 
       // Step 3: Generate embedding
       final embedding = await generateEmbedding(cardImage);
@@ -232,13 +241,16 @@ class MLService {
   // --- Private Helper Methods ---
 
   Future<List<List<List<List<double>>>>> _preprocessForDetection(
-    Uint8List imageBytes,
+    FrameData frameData,
   ) async {
-    // Step 1: Decode image from bytes
-    img.Image? image = img.decodeImage(imageBytes);
-    if (image == null) {
-      throw Exception('Failed to decode image');
-    }
+    // Step 1: Create Image from raw RGB bytes (no JPEG decoding needed)
+    img.Image image = img.Image.fromBytes(
+      width: frameData.width,
+      height: frameData.height,
+      bytes: frameData.bytes.buffer,
+      numChannels: 3, // RGB format
+    );
+
 
     // Step 2: Resize with letterboxing to 640x640
     // Letterboxing maintains aspect ratio and adds gray padding
@@ -264,7 +276,12 @@ class MLService {
 
     // Create 640x640 canvas with gray padding (value: 114)
     // Gray padding is standard for YOLO preprocessing
-    img.Image padded = img.Image(width: targetSize, height: targetSize);
+    // Explicitly specify 3 channels for RGB
+    img.Image padded = img.Image(
+      width: targetSize,
+      height: targetSize,
+      numChannels: 3, // RGB: 3 channels
+    );
     img.fill(padded, color: img.ColorRgb8(114, 114, 114));
 
     // Center the resized image on the padded canvas
@@ -272,29 +289,24 @@ class MLService {
     final int offsetY = (targetSize - newHeight) ~/ 2;
     img.compositeImage(padded, resized, dstX: offsetX, dstY: offsetY);
 
-    // Step 3: Convert to normalized tensor in NCHW format [1, 3, 640, 640]
-    // YOLOv8 TFLite model expects channels-first format
+    // Step 3: Convert to normalized tensor in NHWC format [1, 640, 640, 3]
+    // TFLite model expects channels-last format (Height, Width, Channels)
     final tensor = List.generate(
       1, // batch size
       (_) => List.generate(
-        3, // channels (R, G, B)
-        (c) => List.generate(
-          targetSize, // height
-          (y) => List.generate(
-            targetSize, // width
-            (x) {
-              final pixel = padded.getPixel(x, y);
+        targetSize, // height
+        (y) => List.generate(
+          targetSize, // width
+          (x) {
+            final pixel = padded.getPixel(x, y);
 
-              // Get the appropriate channel value and normalize [0-255] → [0-1]
-              if (c == 0) {
-                return pixel.r / 255.0; // Red channel
-              } else if (c == 1) {
-                return pixel.g / 255.0; // Green channel
-              } else {
-                return pixel.b / 255.0; // Blue channel
-              }
-            },
-          ),
+            // Return RGB values as a list [R, G, B], normalized [0-255] → [0-1]
+            return [
+              pixel.r / 255.0, // Red channel
+              pixel.g / 255.0, // Green channel
+              pixel.b / 255.0, // Blue channel
+            ];
+          },
         ),
       ),
     );
@@ -506,14 +518,8 @@ class MLService {
     return dotProduct; // Embeddings are already normalized
   }
 
-  Future<Uint8List> _cropRegion(Uint8List imageBytes, ui.Rect rect) async {
-    // Step 1: Decode original image
-    img.Image? image = img.decodeImage(imageBytes);
-    if (image == null) {
-      throw Exception('Failed to decode image for cropping');
-    }
-
-    // Step 2: Convert normalized coordinates to pixel coordinates
+  Future<Uint8List> _cropRegion(img.Image image, ui.Rect rect) async {
+    // Step 1: Convert normalized coordinates to pixel coordinates
     // rect is in normalized [0, 1] range, convert to actual pixels
     final int x = (rect.left * image.width).round().clamp(0, image.width - 1);
     final int y = (rect.top * image.height).round().clamp(0, image.height - 1);

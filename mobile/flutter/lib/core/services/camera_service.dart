@@ -2,6 +2,8 @@ import 'dart:typed_data';
 import 'package:camera/camera.dart';
 import 'package:image/image.dart' as img;
 
+import '../models/frame_data.dart';
+
 /// High-performance camera service optimized for iOS.
 class CameraService {
   CameraController? _controller;
@@ -9,7 +11,7 @@ class CameraService {
   int _frameCount = 0;
 
   /// Frame processing callback.
-  Function(Uint8List imageBytes)? onFrameAvailable;
+  Function(FrameData frameData)? onFrameAvailable;
 
   /// Initialize camera with optimal settings for card scanning.
   Future<void> initialize() async {
@@ -27,7 +29,7 @@ class CameraService {
 
     _controller = CameraController(
       camera,
-      ResolutionPreset.high, // 1080p for good quality
+      ResolutionPreset.medium, // 720p - balance between quality and performance
       enableAudio: false,
       imageFormatGroup: ImageFormatGroup.yuv420, // Efficient format
     );
@@ -42,7 +44,7 @@ class CameraService {
   }
 
   /// Start processing camera frames.
-  void startProcessing({int frameSkip = 6}) {
+  void startProcessing({int frameSkip = 15}) {
     if (_controller == null || !_controller!.value.isInitialized) {
       throw Exception('Camera not initialized');
     }
@@ -56,7 +58,12 @@ class CameraService {
       // Skip if still processing previous frame
       if (_isProcessing) return;
 
-      _processFrame(image);
+      // Process frame without blocking camera stream
+      _processFrame(image).then((_) {
+        // Frame processed successfully
+      }).catchError((e) {
+        print('⚠️  Frame processing error: $e');
+      });
     });
 
     print('✅ Camera processing started (every ${frameSkip}th frame)');
@@ -94,7 +101,7 @@ class CameraService {
   /// Convert CameraImage (YUV420) to RGB bytes.
   ///
   /// Optimized for iOS camera format.
-  Future<Uint8List> _convertCameraImage(CameraImage image) async {
+  Future<FrameData> _convertCameraImage(CameraImage image) async {
     try {
       // iOS uses YUV420 format (efficient)
       if (image.format.group == ImageFormatGroup.yuv420) {
@@ -110,43 +117,90 @@ class CameraService {
   }
 
   /// Convert YUV420 to RGB (optimized implementation).
-  Uint8List _convertYUV420toRGB(CameraImage image) {
+  ///
+  /// iOS uses NV12 format (biplanar): Y plane + interleaved UV plane
+  /// Android may use YV12 or I420 (triplanar): Y + U + V separate planes
+  FrameData _convertYUV420toRGB(CameraImage image) {
     final int width = image.width;
     final int height = image.height;
 
-    // Get YUV planes
+    // Create RGB byte buffer directly (RGB888 format: 3 bytes per pixel)
+    final rgbBytes = Uint8List(width * height * 3);
+
+    // Get Y plane (always first plane)
     final yPlane = image.planes[0];
-    final uPlane = image.planes[1];
-    final vPlane = image.planes[2];
 
-    // Create RGB image
-    final rgbImage = img.Image(width: width, height: height);
+    // Check if we have NV12 (2 planes) or I420/YV12 (3 planes)
+    final bool isNV12 = image.planes.length == 2;
 
-    // YUV to RGB conversion
-    // Formula: Standard BT.601 color space conversion
-    for (int row = 0; row < height; row++) {
-      for (int col = 0; col < width; col++) {
-        final int yIndex = row * yPlane.bytesPerRow + col;
-        final int uvRow = row ~/ 2;
-        final int uvCol = col ~/ 2;
-        final int uvIndex = uvRow * uPlane.bytesPerRow + uvCol;
+    if (isNV12) {
+      // iOS NV12 format: Plane 0 = Y, Plane 1 = interleaved UV
+      final uvPlane = image.planes[1];
 
-        final int y = yPlane.bytes[yIndex];
-        final int u = uPlane.bytes[uvIndex] - 128;
-        final int v = vPlane.bytes[uvIndex] - 128;
+      for (int row = 0; row < height; row++) {
+        for (int col = 0; col < width; col++) {
+          // Get Y value
+          final int yIndex = row * yPlane.bytesPerRow + col;
+          final int y = yPlane.bytes[yIndex];
 
-        // Convert to RGB
-        int r = (y + 1.402 * v).round().clamp(0, 255);
-        int g = (y - 0.344136 * u - 0.714136 * v).round().clamp(0, 255);
-        int b = (y + 1.772 * u).round().clamp(0, 255);
+          // Get UV values (interleaved: UVUVUV...)
+          // UV plane is half resolution (4:2:0 subsampling)
+          final int uvRow = row ~/ 2;
+          final int uvCol = col ~/ 2;
+          final int uvIndex = uvRow * uvPlane.bytesPerRow + (uvCol * 2);
 
-        rgbImage.setPixelRgba(col, row, r, g, b, 255);
+          // In NV12, U and V are interleaved: U at even indices, V at odd
+          final int u = uvPlane.bytes[uvIndex] - 128;
+          final int v = uvPlane.bytes[uvIndex + 1] - 128;
+
+          // Convert to RGB using BT.601 color space conversion
+          int r = (y + 1.402 * v).round().clamp(0, 255);
+          int g = (y - 0.344136 * u - 0.714136 * v).round().clamp(0, 255);
+          int b = (y + 1.772 * u).round().clamp(0, 255);
+
+          // Store RGB bytes (RGB888 format)
+          final int pixelIndex = (row * width + col) * 3;
+          rgbBytes[pixelIndex] = r;
+          rgbBytes[pixelIndex + 1] = g;
+          rgbBytes[pixelIndex + 2] = b;
+        }
+      }
+    } else {
+      // I420 or YV12 format: 3 separate planes
+      final uPlane = image.planes[1];
+      final vPlane = image.planes[2];
+
+      for (int row = 0; row < height; row++) {
+        for (int col = 0; col < width; col++) {
+          final int yIndex = row * yPlane.bytesPerRow + col;
+          final int uvRow = row ~/ 2;
+          final int uvCol = col ~/ 2;
+          final int uvIndex = uvRow * uPlane.bytesPerRow + uvCol;
+
+          final int y = yPlane.bytes[yIndex];
+          final int u = uPlane.bytes[uvIndex] - 128;
+          final int v = vPlane.bytes[uvIndex] - 128;
+
+          // Convert to RGB
+          int r = (y + 1.402 * v).round().clamp(0, 255);
+          int g = (y - 0.344136 * u - 0.714136 * v).round().clamp(0, 255);
+          int b = (y + 1.772 * u).round().clamp(0, 255);
+
+          // Store RGB bytes (RGB888 format)
+          final int pixelIndex = (row * width + col) * 3;
+          rgbBytes[pixelIndex] = r;
+          rgbBytes[pixelIndex + 1] = g;
+          rgbBytes[pixelIndex + 2] = b;
+        }
       }
     }
 
-    // Encode to JPEG for ML pipeline
-    final jpegBytes = img.encodeJpg(rgbImage, quality: 90);
-    return Uint8List.fromList(jpegBytes);
+    // Return raw RGB bytes with dimensions (no JPEG encoding)
+    return FrameData(
+      bytes: rgbBytes,
+      width: width,
+      height: height,
+    );
   }
 
   /// Get camera controller for preview.

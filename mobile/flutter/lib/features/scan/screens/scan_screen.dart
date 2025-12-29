@@ -4,6 +4,7 @@ import 'dart:async';
 
 import '../../../core/services/camera_service.dart';
 import '../../../core/services/ml_service.dart';
+import '../../../core/models/frame_data.dart';
 import '../../../core/models/recognition_result.dart';
 import '../widgets/ml_overlay.dart';
 import '../widgets/result_card_widget.dart';
@@ -25,6 +26,7 @@ class _ScanScreenState extends State<ScanScreen>
   List<ScanResult> _scanResults = [];
   bool _isInitializing = true;
   bool _isScanning = false;
+  bool _isProcessingFrame = false;
   String? _error;
 
   late AnimationController _pulseController;
@@ -73,7 +75,7 @@ class _ScanScreenState extends State<ScanScreen>
 
   void _startScanning() {
     if (!_isScanning && _cameraService.isInitialized) {
-      _cameraService.startProcessing(frameSkip: 6); // ~5 FPS at 30 FPS camera
+      _cameraService.startProcessing(frameSkip: 10); // ~3 FPS at 30 FPS camera (non-blocking processing)
       setState(() => _isScanning = true);
     }
   }
@@ -85,20 +87,25 @@ class _ScanScreenState extends State<ScanScreen>
     }
   }
 
-  Future<void> _processFrame(imageBytes) async {
-    try {
-      // Run ML pipeline
-      final results = await _mlService.scanFrame(imageBytes);
+  void _processFrame(FrameData frameData) {
+    // Skip if already processing a frame
+    if (_isProcessingFrame) return;
 
+    _isProcessingFrame = true;
+
+    // Process frame in background without blocking camera
+    _mlService.scanFrame(frameData).then((results) {
       // Update UI with results
       if (mounted) {
         setState(() {
           _scanResults = results;
         });
       }
-    } catch (e) {
+    }).catchError((e) {
       print('Frame processing error: $e');
-    }
+    }).whenComplete(() {
+      _isProcessingFrame = false;
+    });
   }
 
   @override
