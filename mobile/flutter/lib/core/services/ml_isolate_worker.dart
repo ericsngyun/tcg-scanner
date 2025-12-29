@@ -505,6 +505,30 @@ List<Map<String, dynamic>> _parseDetections(
       'bottom': (y2Resized / resizedHeight).clamp(0.0, 1.0),
     };
 
+    // Calculate box area
+    final boxWidth = normalizedBox['right']! - normalizedBox['left']!;
+    final boxHeight = normalizedBox['bottom']! - normalizedBox['top']!;
+    final boxArea = boxWidth * boxHeight;
+
+    // Filter out overly large detections (likely false positives)
+    // TCG cards should not take up more than 70% of the frame
+    if (boxArea > 0.7) {
+      continue;
+    }
+
+    // Filter out very small detections (noise)
+    // TCG cards should be at least 3% of the frame
+    if (boxArea < 0.03) {
+      continue;
+    }
+
+    // Filter out detections with extreme aspect ratios
+    // TCG cards have aspect ratio around 0.7 (height/width) ± variation
+    final aspectRatio = boxHeight / boxWidth;
+    if (aspectRatio < 0.5 || aspectRatio > 2.0) {
+      continue;
+    }
+
     // Store as Map (not Rect) for isolate serialization
     detections.add({
       'boundingBox': normalizedBox,
@@ -514,9 +538,11 @@ List<Map<String, dynamic>> _parseDetections(
   }
 
   print('🔧 Isolate: Found $countAboveThreshold/$numDetections detections above 0.3 threshold (max confidence: ${maxConfidence.toStringAsFixed(3)})');
+  print('🔧 Isolate: After filtering (size/aspect): ${detections.length} detections');
 
-  // Apply NMS with stricter threshold to reduce multiple detections
-  final finalDetections = _applyNMS(detections, iouThreshold: 0.3);
+  // Apply very strict NMS threshold to eliminate overlapping detections
+  // Lower IoU threshold = more aggressive (boxes with even small overlap get suppressed)
+  final finalDetections = _applyNMS(detections, iouThreshold: 0.15);
   print('🔧 Isolate: After NMS: ${finalDetections.length} detections');
   return finalDetections;
 }
