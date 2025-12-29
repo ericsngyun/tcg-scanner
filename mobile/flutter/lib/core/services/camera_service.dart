@@ -1,14 +1,21 @@
 import 'dart:typed_data';
+import 'dart:io';
 import 'package:camera/camera.dart';
 import 'package:image/image.dart' as img;
 
 import '../models/frame_data.dart';
 
 /// High-performance camera service optimized for iOS.
+/// 
+/// Handles camera orientation correctly for portrait mode scanning,
+/// rotating frames from landscape sensor to portrait output.
 class CameraService {
   CameraController? _controller;
   bool _isProcessing = false;
   int _frameCount = 0;
+  
+  /// Sensor orientation in degrees (90 for most iOS back cameras).
+  int _sensorOrientation = 0;
 
   /// Frame processing callback.
   Function(FrameData frameData)? onFrameAvailable;
@@ -26,6 +33,10 @@ class CameraService {
       (camera) => camera.lensDirection == CameraLensDirection.back,
       orElse: () => cameras.first,
     );
+    
+    // Store sensor orientation for rotation handling
+    _sensorOrientation = camera.sensorOrientation;
+    print('📷 Camera sensor orientation: $_sensorOrientation degrees');
 
     _controller = CameraController(
       camera,
@@ -44,7 +55,12 @@ class CameraService {
   }
 
   /// Start processing camera frames.
-  void startProcessing({int frameSkip = 15}) {
+  /// 
+  /// [frameSkip] controls processing frequency. Lower = more responsive but higher CPU.
+  /// - 5: ~6 fps processing (recommended for fluid tracking)
+  /// - 10: ~3 fps processing (balanced)
+  /// - 15: ~2 fps processing (power saving)
+  void startProcessing({int frameSkip = 5}) {
     if (_controller == null || !_controller!.value.isInitialized) {
       throw Exception('Camera not initialized');
     }
@@ -52,7 +68,7 @@ class CameraService {
     _controller!.startImageStream((CameraImage image) {
       _frameCount++;
 
-      // Throttle: Process every Nth frame (~5 FPS at 30 FPS camera)
+      // Throttle: Process every Nth frame
       if (_frameCount % frameSkip != 0) return;
 
       // Skip if still processing previous frame
@@ -86,7 +102,7 @@ class CameraService {
     _isProcessing = true;
 
     try {
-      // Convert CameraImage to RGB bytes
+      // Convert CameraImage to RGB bytes with rotation handling
       final imageBytes = await _convertCameraImage(image);
 
       // Send to ML pipeline
@@ -100,7 +116,7 @@ class CameraService {
 
   /// Convert CameraImage (YUV420) to RGB bytes.
   ///
-  /// Optimized for iOS camera format.
+  /// Handles iOS camera rotation so output matches portrait screen orientation.
   Future<FrameData> _convertCameraImage(CameraImage image) async {
     try {
       // iOS uses YUV420 format (efficient)
@@ -116,16 +132,23 @@ class CameraService {
     }
   }
 
-  /// Convert YUV420 to RGB (optimized implementation).
+  /// Convert YUV420 to RGB with proper rotation for iOS.
   ///
-  /// iOS uses NV12 format (biplanar): Y plane + interleaved UV plane
-  /// Android may use YV12 or I420 (triplanar): Y + U + V separate planes
+  /// iOS cameras output in landscape orientation with sensorOrientation = 90.
+  /// This method converts and rotates to portrait orientation.
   FrameData _convertYUV420toRGB(CameraImage image) {
-    final int width = image.width;
-    final int height = image.height;
+    final int rawWidth = image.width;
+    final int rawHeight = image.height;
+    
+    // Determine if we need to rotate (iOS back camera is typically 90 degrees)
+    final bool needsRotation = Platform.isIOS && (_sensorOrientation == 90 || _sensorOrientation == 270);
+    
+    // Output dimensions (swapped if rotating 90/270 degrees)
+    final int outWidth = needsRotation ? rawHeight : rawWidth;
+    final int outHeight = needsRotation ? rawWidth : rawHeight;
 
-    // Create RGB byte buffer directly (RGB888 format: 3 bytes per pixel)
-    final rgbBytes = Uint8List(width * height * 3);
+    // Create RGB byte buffer (RGB888 format: 3 bytes per pixel)
+    final rgbBytes = Uint8List(outWidth * outHeight * 3);
 
     // Get Y plane (always first plane)
     final yPlane = image.planes[0];
@@ -137,8 +160,8 @@ class CameraService {
       // iOS NV12 format: Plane 0 = Y, Plane 1 = interleaved UV
       final uvPlane = image.planes[1];
 
-      for (int row = 0; row < height; row++) {
-        for (int col = 0; col < width; col++) {
+      for (int row = 0; row < rawHeight; row++) {
+        for (int col = 0; col < rawWidth; col++) {
           // Get Y value
           final int yIndex = row * yPlane.bytesPerRow + col;
           final int y = yPlane.bytes[yIndex];
@@ -158,8 +181,25 @@ class CameraService {
           int g = (y - 0.344136 * u - 0.714136 * v).round().clamp(0, 255);
           int b = (y + 1.772 * u).round().clamp(0, 255);
 
+          // Calculate output position with rotation
+          int outRow, outCol;
+          if (needsRotation) {
+            if (_sensorOrientation == 90) {
+              // Rotate 90 degrees clockwise: (row, col) -> (col, height - 1 - row)
+              outRow = col;
+              outCol = rawHeight - 1 - row;
+            } else {
+              // Rotate 270 degrees clockwise (or 90 CCW): (row, col) -> (width - 1 - col, row)
+              outRow = rawWidth - 1 - col;
+              outCol = row;
+            }
+          } else {
+            outRow = row;
+            outCol = col;
+          }
+
           // Store RGB bytes (RGB888 format)
-          final int pixelIndex = (row * width + col) * 3;
+          final int pixelIndex = (outRow * outWidth + outCol) * 3;
           rgbBytes[pixelIndex] = r;
           rgbBytes[pixelIndex + 1] = g;
           rgbBytes[pixelIndex + 2] = b;
@@ -170,8 +210,8 @@ class CameraService {
       final uPlane = image.planes[1];
       final vPlane = image.planes[2];
 
-      for (int row = 0; row < height; row++) {
-        for (int col = 0; col < width; col++) {
+      for (int row = 0; row < rawHeight; row++) {
+        for (int col = 0; col < rawWidth; col++) {
           final int yIndex = row * yPlane.bytesPerRow + col;
           final int uvRow = row ~/ 2;
           final int uvCol = col ~/ 2;
@@ -186,8 +226,23 @@ class CameraService {
           int g = (y - 0.344136 * u - 0.714136 * v).round().clamp(0, 255);
           int b = (y + 1.772 * u).round().clamp(0, 255);
 
+          // Calculate output position with rotation
+          int outRow, outCol;
+          if (needsRotation) {
+            if (_sensorOrientation == 90) {
+              outRow = col;
+              outCol = rawHeight - 1 - row;
+            } else {
+              outRow = rawWidth - 1 - col;
+              outCol = row;
+            }
+          } else {
+            outRow = row;
+            outCol = col;
+          }
+
           // Store RGB bytes (RGB888 format)
-          final int pixelIndex = (row * width + col) * 3;
+          final int pixelIndex = (outRow * outWidth + outCol) * 3;
           rgbBytes[pixelIndex] = r;
           rgbBytes[pixelIndex + 1] = g;
           rgbBytes[pixelIndex + 2] = b;
@@ -195,11 +250,11 @@ class CameraService {
       }
     }
 
-    // Return raw RGB bytes with dimensions (no JPEG encoding)
+    // Return rotated RGB bytes with correct portrait dimensions
     return FrameData(
       bytes: rgbBytes,
-      width: width,
-      height: height,
+      width: outWidth,
+      height: outHeight,
     );
   }
 
@@ -208,6 +263,9 @@ class CameraService {
 
   /// Check if camera is initialized.
   bool get isInitialized => _controller?.value.isInitialized ?? false;
+  
+  /// Get the sensor orientation.
+  int get sensorOrientation => _sensorOrientation;
 
   /// Dispose camera resources.
   Future<void> dispose() async {

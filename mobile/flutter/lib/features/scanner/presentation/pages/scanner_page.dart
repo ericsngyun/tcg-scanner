@@ -101,9 +101,13 @@ class _ScannerPageState extends ConsumerState<ScannerPage>
 
           // Detection overlay
           if (scanState.detections.isNotEmpty)
-            DetectionOverlay(
-              detections: scanState.detections,
-              imageSize: _cameraController?.value.previewSize ?? Size.zero,
+            LayoutBuilder(
+              builder: (context, constraints) {
+                return DetectionOverlay(
+                  detections: scanState.detections,
+                  screenSize: constraints.biggest,
+                );
+              },
             ),
 
           // Top bar with controls
