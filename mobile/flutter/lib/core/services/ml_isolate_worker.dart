@@ -511,27 +511,38 @@ List<Map<String, dynamic>> _parseDetections(
       'bottom': (y2Resized / resizedHeight).clamp(0.0, 1.0),
     };
 
-    // Calculate box area
+    // Calculate box dimensions and filters
     final boxWidth = normalizedBox['right']! - normalizedBox['left']!;
     final boxHeight = normalizedBox['bottom']! - normalizedBox['top']!;
     final boxArea = boxWidth * boxHeight;
+    final aspectRatio = boxHeight / boxWidth;
 
+    // Debug: Log first few detections with full coordinate trace
+    if (countAboveThreshold <= 3) {
+      print('🔍 Detection $countAboveThreshold raw: center=(${xCenterNorm.toStringAsFixed(3)}, ${yCenterNorm.toStringAsFixed(3)}) size=(${widthNorm.toStringAsFixed(3)}, ${heightNorm.toStringAsFixed(3)}) conf=${confidence.toStringAsFixed(3)}');
+      print('   640px space: (${x1Px640.toStringAsFixed(1)}, ${y1Px640.toStringAsFixed(1)}) - (${x2Px640.toStringAsFixed(1)}, ${y2Px640.toStringAsFixed(1)})');
+      print('   After offset: (${x1Resized.toStringAsFixed(1)}, ${y1Resized.toStringAsFixed(1)}) - (${x2Resized.toStringAsFixed(1)}, ${y2Resized.toStringAsFixed(1)})');
+      print('   Normalized: (${normalizedBox['left']!.toStringAsFixed(3)}, ${normalizedBox['top']!.toStringAsFixed(3)}) - (${normalizedBox['right']!.toStringAsFixed(3)}, ${normalizedBox['bottom']!.toStringAsFixed(3)})');
+      print('   Area=${boxArea.toStringAsFixed(3)} aspectRatio=${aspectRatio.toStringAsFixed(3)}');
+    }
+
+    // TEMPORARILY DISABLE aggressive filtering to debug
     // Filter out overly large detections (likely false positives)
-    // TCG cards should not take up more than 70% of the frame
-    if (boxArea > 0.7) {
+    if (boxArea > 0.8) {  // Relaxed from 0.7
+      print('   ❌ Filtered: too large (area=${boxArea.toStringAsFixed(3)})');
       continue;
     }
 
     // Filter out very small detections (noise)
-    // TCG cards should be at least 3% of the frame
-    if (boxArea < 0.03) {
+    if (boxArea < 0.02) {  // Relaxed from 0.03
+      print('   ❌ Filtered: too small (area=${boxArea.toStringAsFixed(3)})');
       continue;
     }
 
     // Filter out detections with extreme aspect ratios
-    // TCG cards have aspect ratio around 0.7 (height/width) ± variation
-    final aspectRatio = boxHeight / boxWidth;
-    if (aspectRatio < 0.5 || aspectRatio > 2.0) {
+    // TCG cards have aspect ratio around 1.4 (height/width) ± variation
+    if (aspectRatio < 0.4 || aspectRatio > 2.5) {  // Relaxed from 0.5-2.0
+      print('   ❌ Filtered: bad aspect (${aspectRatio.toStringAsFixed(3)})');
       continue;
     }
 
