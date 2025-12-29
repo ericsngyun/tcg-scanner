@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:camera/camera.dart';
 import 'dart:async';
 
 import '../../../core/services/camera_service.dart';
 import '../../../core/services/ml_service.dart';
+import '../../../core/services/card_tracker.dart';
+import '../../../core/services/recognition_stabilizer.dart';
 import '../../../core/models/frame_data.dart';
 import '../../../core/models/recognition_result.dart';
 import '../widgets/ml_overlay.dart';
@@ -11,6 +14,12 @@ import '../widgets/result_card_widget.dart';
 import '../widgets/scan_instructions.dart';
 
 /// Main scan screen with camera preview and ML overlay.
+/// 
+/// Integrates:
+/// - Camera service with proper iOS rotation handling
+/// - Card tracker for smooth bounding box transitions
+/// - Recognition stabilizer for stable card identification
+/// - Animated overlays with haptic feedback
 class ScanScreen extends StatefulWidget {
   const ScanScreen({Key? key}) : super(key: key);
 
@@ -22,12 +31,16 @@ class _ScanScreenState extends State<ScanScreen>
     with SingleTickerProviderStateMixin {
   final _cameraService = CameraService();
   final _mlService = MLService.instance;
+  final _cardTracker = CardTracker();
+  final _recognitionStabilizer = MultiCardRecognitionStabilizer();
 
-  List<ScanResult> _scanResults = [];
+  List<TrackedCard> _trackedCards = [];
+  List<ScanResult> _rawResults = [];
   bool _isInitializing = true;
   bool _isScanning = false;
   bool _isProcessingFrame = false;
   String? _error;
+  String _initStatus = 'Starting...';
 
   late AnimationController _pulseController;
 
@@ -48,10 +61,13 @@ class _ScanScreenState extends State<ScanScreen>
       setState(() {
         _isInitializing = true;
         _error = null;
+        _initStatus = 'Loading ML models...';
       });
 
       // Initialize ML service
       await _mlService.initialize();
+      
+      setState(() => _initStatus = 'Starting camera...');
 
       // Initialize camera
       await _cameraService.initialize();
@@ -75,7 +91,8 @@ class _ScanScreenState extends State<ScanScreen>
 
   void _startScanning() {
     if (!_isScanning && _cameraService.isInitialized) {
-      _cameraService.startProcessing(frameSkip: 10); // ~3 FPS at 30 FPS camera (non-blocking processing)
+      // Use lower frame skip for more responsive tracking
+      _cameraService.startProcessing(frameSkip: 5);
       setState(() => _isScanning = true);
     }
   }
@@ -83,7 +100,13 @@ class _ScanScreenState extends State<ScanScreen>
   void _stopScanning() {
     if (_isScanning) {
       _cameraService.stopProcessing();
-      setState(() => _isScanning = false);
+      _cardTracker.reset();
+      _recognitionStabilizer.reset();
+      setState(() {
+        _isScanning = false;
+        _trackedCards = [];
+        _rawResults = [];
+      });
     }
   }
 
@@ -95,17 +118,75 @@ class _ScanScreenState extends State<ScanScreen>
 
     // Process frame in background without blocking camera
     _mlService.scanFrame(frameData).then((results) {
-      // Update UI with results
-      if (mounted) {
-        setState(() {
-          _scanResults = results;
-        });
+      if (!mounted) return;
+      
+      _rawResults = results;
+      
+      // Extract detections for tracking
+      final detections = results.map((r) => r.detection).toList();
+      
+      // Update card tracker with new detections
+      final tracked = _cardTracker.update(detections);
+      
+      // Update recognition for each tracked card
+      for (final card in tracked) {
+        // Find the matching scan result for this tracked card
+        final matchingResult = _findMatchingResult(card, results);
+        if (matchingResult != null) {
+          // Stabilize recognition for this card
+          final stabilizer = _recognitionStabilizer.getStabilizer(card.id);
+          final stableRecognition = stabilizer.stabilize(matchingResult.matches);
+          card.recognition = stableRecognition;
+        }
       }
+      
+      // Clean up stabilizers for removed cards
+      _recognitionStabilizer.cleanup(tracked.map((c) => c.id).toSet());
+      
+      setState(() {
+        _trackedCards = tracked;
+      });
     }).catchError((e) {
       print('Frame processing error: $e');
     }).whenComplete(() {
       _isProcessingFrame = false;
     });
+  }
+  
+  /// Find the scan result that matches a tracked card by IoU.
+  ScanResult? _findMatchingResult(TrackedCard card, List<ScanResult> results) {
+    double bestIou = 0.3;
+    ScanResult? bestMatch;
+    
+    for (final result in results) {
+      final iou = _calculateIoU(card.smoothedBox, result.detection.boundingBox);
+      if (iou > bestIou) {
+        bestIou = iou;
+        bestMatch = result;
+      }
+    }
+    
+    return bestMatch;
+  }
+  
+  double _calculateIoU(Rect a, Rect b) {
+    final intersectionLeft = a.left > b.left ? a.left : b.left;
+    final intersectionTop = a.top > b.top ? a.top : b.top;
+    final intersectionRight = a.right < b.right ? a.right : b.right;
+    final intersectionBottom = a.bottom < b.bottom ? a.bottom : b.bottom;
+
+    if (intersectionRight <= intersectionLeft || intersectionBottom <= intersectionTop) {
+      return 0.0;
+    }
+
+    final intersectionArea = 
+        (intersectionRight - intersectionLeft) * (intersectionBottom - intersectionTop);
+    final aArea = a.width * a.height;
+    final bArea = b.width * b.height;
+    final unionArea = aArea + bArea - intersectionArea;
+
+    if (unionArea <= 0) return 0.0;
+    return intersectionArea / unionArea;
   }
 
   @override
@@ -125,17 +206,18 @@ class _ScanScreenState extends State<ScanScreen>
           // Camera preview (full screen)
           _buildCameraPreview(),
 
-          // ML overlay with bounding boxes
-          if (_isScanning) MLOverlay(results: _scanResults),
+          // Smooth overlay with bounding boxes
+          if (_isScanning) _buildOverlay(),
 
           // Top bar with controls
           _buildTopBar(),
 
           // Bottom sheet with results
-          if (_scanResults.isNotEmpty) _buildResultsSheet(),
+          if (_trackedCards.any((c) => c.recognition != null)) 
+            _buildResultsSheet(),
 
           // Scan instructions (when no cards detected)
-          if (_scanResults.isEmpty && _isScanning)
+          if (_trackedCards.isEmpty && _isScanning)
             const ScanInstructions(),
         ],
       ),
@@ -163,6 +245,15 @@ class _ScanScreenState extends State<ScanScreen>
       ),
     );
   }
+  
+  Widget _buildOverlay() {
+    final size = MediaQuery.of(context).size;
+    
+    return MLOverlay(
+      results: _rawResults,
+      cameraController: _cameraService.controller,
+    );
+  }
 
   Widget _buildTopBar() {
     return SafeArea(
@@ -187,14 +278,27 @@ class _ScanScreenState extends State<ScanScreen>
               onPressed: () => Navigator.of(context).pop(),
             ),
 
-            // Title
-            Text(
-              'Scan Cards',
-              style: const TextStyle(
-                color: Colors.white,
-                fontSize: 20,
-                fontWeight: FontWeight.bold,
-              ),
+            // Title with status
+            Column(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                const Text(
+                  'Scan Cards',
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 18,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                if (_trackedCards.isNotEmpty)
+                  Text(
+                    '${_trackedCards.length} card${_trackedCards.length != 1 ? 's' : ''} detected',
+                    style: TextStyle(
+                      color: Colors.white.withOpacity(0.7),
+                      fontSize: 12,
+                    ),
+                  ),
+              ],
             ),
 
             // Scan toggle
@@ -226,10 +330,17 @@ class _ScanScreenState extends State<ScanScreen>
   }
 
   Widget _buildResultsSheet() {
+    // Get cards with recognition results
+    final recognizedCards = _trackedCards
+        .where((c) => c.recognition != null)
+        .toList();
+    
+    if (recognizedCards.isEmpty) return const SizedBox.shrink();
+
     return DraggableScrollableSheet(
-      initialChildSize: 0.3,
-      minChildSize: 0.15,
-      maxChildSize: 0.7,
+      initialChildSize: 0.25,
+      minChildSize: 0.12,
+      maxChildSize: 0.6,
       builder: (context, scrollController) {
         return Container(
           decoration: BoxDecoration(
@@ -263,16 +374,16 @@ class _ScanScreenState extends State<ScanScreen>
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Text(
-                      '${_scanResults.length} card${_scanResults.length != 1 ? 's' : ''} detected',
+                      '${recognizedCards.length} card${recognizedCards.length != 1 ? 's' : ''} identified',
                       style: const TextStyle(
-                        fontSize: 18,
+                        fontSize: 16,
                         fontWeight: FontWeight.bold,
                       ),
                     ),
                     Text(
                       'Tap for details',
                       style: TextStyle(
-                        fontSize: 14,
+                        fontSize: 12,
                         color: Colors.grey[600],
                       ),
                     ),
@@ -280,21 +391,17 @@ class _ScanScreenState extends State<ScanScreen>
                 ),
               ),
 
-              const SizedBox(height: 12),
+              const SizedBox(height: 8),
 
               // Results list
               Expanded(
                 child: ListView.builder(
                   controller: scrollController,
-                  itemCount: _scanResults.length,
+                  itemCount: recognizedCards.length,
+                  padding: const EdgeInsets.symmetric(horizontal: 16),
                   itemBuilder: (context, index) {
-                    return ResultCardWidget(
-                      result: _scanResults[index],
-                      onTap: () {
-                        // Navigate to card detail
-                        // TODO: Implement navigation
-                      },
-                    );
+                    final card = recognizedCards[index];
+                    return _buildResultCard(card);
                   },
                 ),
               ),
@@ -302,6 +409,102 @@ class _ScanScreenState extends State<ScanScreen>
           ),
         );
       },
+    );
+  }
+  
+  Widget _buildResultCard(TrackedCard card) {
+    final recognition = card.recognition!;
+    
+    return Container(
+      margin: const EdgeInsets.only(bottom: 12),
+      padding: const EdgeInsets.all(12),
+      decoration: BoxDecoration(
+        color: Colors.white,
+        borderRadius: BorderRadius.circular(12),
+        boxShadow: [
+          BoxShadow(
+            color: Colors.black.withOpacity(0.05),
+            blurRadius: 4,
+            offset: const Offset(0, 2),
+          ),
+        ],
+      ),
+      child: Row(
+        children: [
+          // Card image placeholder
+          Container(
+            width: 50,
+            height: 70,
+            decoration: BoxDecoration(
+              color: Colors.grey[200],
+              borderRadius: BorderRadius.circular(6),
+            ),
+            child: Icon(
+              Icons.style,
+              color: Colors.grey[400],
+            ),
+          ),
+          const SizedBox(width: 12),
+          
+          // Card info
+          Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  recognition.card.name,
+                  style: const TextStyle(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 14,
+                  ),
+                  maxLines: 1,
+                  overflow: TextOverflow.ellipsis,
+                ),
+                const SizedBox(height: 4),
+                Row(
+                  children: [
+                    Container(
+                      padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
+                      decoration: BoxDecoration(
+                        color: Colors.green.withOpacity(0.1),
+                        borderRadius: BorderRadius.circular(4),
+                      ),
+                      child: Text(
+                        '${(recognition.similarity * 100).toStringAsFixed(0)}% match',
+                        style: const TextStyle(
+                          color: Colors.green,
+                          fontSize: 11,
+                          fontWeight: FontWeight.w500,
+                        ),
+                      ),
+                    ),
+                    if (recognition.card.pricing?.marketPrice != null) ...[
+                      const SizedBox(width: 8),
+                      Text(
+                        '\$${recognition.card.pricing!.marketPrice!.toStringAsFixed(2)}',
+                        style: const TextStyle(
+                          color: Colors.green,
+                          fontSize: 12,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ],
+                  ],
+                ),
+              ],
+            ),
+          ),
+          
+          // Action button
+          IconButton(
+            icon: const Icon(Icons.add),
+            onPressed: () {
+              HapticFeedback.lightImpact();
+              // TODO: Add to collection
+            },
+          ),
+        ],
+      ),
     );
   }
 
@@ -316,9 +519,9 @@ class _ScanScreenState extends State<ScanScreen>
               valueColor: AlwaysStoppedAnimation<Color>(Colors.blue),
             ),
             const SizedBox(height: 24),
-            const Text(
-              'Initializing ML models...',
-              style: TextStyle(
+            Text(
+              _initStatus,
+              style: const TextStyle(
                 color: Colors.white,
                 fontSize: 16,
               ),
